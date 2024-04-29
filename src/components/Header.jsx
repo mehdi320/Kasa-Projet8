@@ -1,8 +1,20 @@
+import LogoKasa from '../assets/image/LOGO.png';
+
 
 const Header = () => {
     return (
      <div className="header">
-        <h1>React App</h1>
+       <img src={LogoKasa} alt="LogoKasa"/>
+       <nav className="header-nav">
+        <ul>
+            <li>
+                <a href="#">Accueil</a>
+                </li>
+                <li>
+                <a href="#">A Propos</a>
+            </li>
+        </ul>
+       </nav>
      </div>
     );
 };
