@@ -1,12 +1,15 @@
-
+import React from 'react';
+import Maison from '../../json.js'; // Remonter de deux niveaux pour accéder à la racine du projet
 
 function Thumb() {
     return (
         <div className="thumb">
-            <div className="banner">
-            <img src="image de la maison" alt="maison" />
-            <h3 className="h3">Le titre </h3>
-            </div>
+            {Maison.map((maison) => (
+                <div className="banner" key={maison.id}>
+                    <img src={maison.cover} alt="maison" />
+                    <h3 className="h3">{maison.title}</h3>
+                </div>
+            ))}
         </div>
     );
 }

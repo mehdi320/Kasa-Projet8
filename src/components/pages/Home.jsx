@@ -1,5 +1,4 @@
 import Thumb from "../Thumb";
-import Maison from "../json";
 
 
 const Home = () => {
