@@ -2,8 +2,11 @@
 
 const Home = () => {
     return (
-        <div>
-            <h1>Welcome to the Home page!</h1>
+        <div className="home">
+            <div className="banner">
+            <img src="" alt="" />
+            </div>
+           
         </div>
     );
 };
