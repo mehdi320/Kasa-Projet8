@@ -1,5 +1,5 @@
 import LogoKasa from '../assets/image/LOGO.png';
-
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -8,10 +8,14 @@ const Header = () => {
        <nav className="header-nav">
         <ul>
             <li>
-                <a href="#">Accueil</a>
+                <NavLink to="/" className = {({isActive}) => (isActive ? "underline" : "")}>
+                    <a>Accueil</a>
+                </NavLink>
                 </li>
                 <li>
-                <a href="#">A Propos</a>
+                <NavLink to="/about" className = {({isActive}) => (isActive ? "underline" : "")}>
+                    <a>A Propos</a>
+                </NavLink>
             </li>
         </ul>
        </nav>

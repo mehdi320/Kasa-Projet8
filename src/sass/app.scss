@@ -2,13 +2,21 @@
 display: flex;
 justify-content: space-between;
 nav{
-        ul{
-display: flex;
-    li{ 
-            margin: 0 20px;
-            list-style: none;
+    ul{
+        display: flex;
+        a{
+            text-decoration: none;
+            color: #000;
+            &.underline{
+                text-decoration: underline;
             }
+        }
+
+        li{ 
+             margin: 0 20px;
+             list-style: none;
         }
     }   
 }
 
+}
