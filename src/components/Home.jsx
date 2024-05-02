@@ -1,6 +1,5 @@
-import Thumb from "../Thumb";
-
-
+import Thumb from './pages/Thumb.jsx'; // Remonter d'un niveau pour accéder au dossier components
+import Maison from './components/Home.jsx'; // Remonter de deux niveaux pour accéder à la racine du projet
 const Home = () => {
     return (
         <div className="home">
@@ -9,7 +8,7 @@ const Home = () => {
             <h1 className="h1">Chez vous, partout et ailleurs</h1>
             </div>
             <div className="gallery">
-                <Thumb />
+                <Thumb Maison = {Maison} />
             </div>
         </div>
     );

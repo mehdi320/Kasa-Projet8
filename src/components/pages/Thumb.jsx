@@ -1,7 +1,7 @@
-import React from 'react';
-import Maison from '../../json.js'; // Remonter de deux niveaux pour accéder à la racine du projet
+import proptypes from 'prop-types';
 
-function Thumb() {
+
+function Thumb(Maison) {
     return (
         <div className="thumb">
             {Maison.map((maison) => (
@@ -12,6 +12,9 @@ function Thumb() {
             ))}
         </div>
     );
+    
 }
-
+Thumb.proptypes = {
+    Maison: proptypes.array.isRequired
+};
 export default Thumb;
