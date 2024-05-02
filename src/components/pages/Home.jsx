@@ -1,5 +1,7 @@
 import React from "react";
 import Accommodation from "../Accommodation.jsx";
+import Maison from "../../data/maison.json";
+
 
 const Home = () => {
     return (
@@ -8,8 +10,8 @@ const Home = () => {
           <img src="./images/IMG.png" alt="banner" />
           <h1 className="h1">Chez vous, partout et ailleurs</h1>
         </div>
-        <div className="accommodations">
-          <Accommodation />
+        <div className="gallery">
+          <Accommodation Maison={Maison} />
         </div>
       </div>
     );

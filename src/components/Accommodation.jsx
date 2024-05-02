@@ -1,48 +1,15 @@
-// Accommodation.jsx
-import React from "react";
-import jsonData from "../../json.js";
+import proptypes from 'prop-types';
 
-function Accommodation() {
-  return jsonData.map((accommodation, index) => {
-    const {
-      title,
-      cover,
-      description,
-      host,
-      rating,
-      location,
-      equipments,
-      tags,
-    } = accommodation;
 
-    return (
-      <div className="accommodation" key={index}>
-        <img src={cover} alt={title} className="accommodation-cover" />
-        <h2 className="accommodation-title">{title}</h2>
-        <p className="accommodation-description">{description}</p>
-        <div className="accommodation-host">
-          <img
-            src={host.picture}
-            alt={host.name}
-            className="accommodation-host-picture"
-          />
-          <p className="accommodation-host-name">{host.name}</p>
-        </div>
-        <p className="accommodation-rating">Rating: {rating}</p>
-        <p className="accommodation-location">Location: {location}</p>
-        <ul className="accommodation-equipments">
-          {equipments.map((equipment, index) => (
-            <li key={index}>{equipment}</li>
-          ))}
-        </ul>
-        <ul className="accommodation-tags">
-          {tags.map((tag, index) => (
-            <li key={index}>{tag}</li>
-          ))}
-        </ul>
-      </div>
-    );
-  });
+function Accommodation({Maison}) {
+  return (
+    <div className='accomodation'>
+      <img src='image-du-livre' alt='accomodation' />
+      <h3>Accommodations</h3>
+    </div>
+  );
 }
-
+Accommodation.propTypes = {
+  Maison: proptypes.array.isRequired,
+};
 export default Accommodation;
