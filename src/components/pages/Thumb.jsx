@@ -17,4 +17,5 @@ function Thumb(Maison) {
 Thumb.proptypes = {
     Maison: proptypes.array.isRequired
 };
+
 export default Thumb;
