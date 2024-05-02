@@ -1,6 +1,6 @@
 import React from "react";
 import Accommodation from "../Accommodation.jsx";
-import Maison from "../../data/maison.json";
+import Maison from "../data/maison-json.js";
 
 
 const Home = () => {

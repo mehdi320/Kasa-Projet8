@@ -3,10 +3,12 @@ import proptypes from 'prop-types';
 
 function Accommodation({Maison}) {
   return (
-    <div className='accomodation'>
-      <img src='image-du-livre' alt='accomodation' />
-      <h3>Accommodations</h3>
-    </div>
+    Maison.map((maison) => (
+      <div className='accomodation'>
+        <img src={maison.image} alt='accomodation' />
+        <h3>{maison.name}</h3>
+      </div>
+    ))
   );
 }
 Accommodation.propTypes = {
