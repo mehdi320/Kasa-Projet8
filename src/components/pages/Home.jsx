@@ -1,7 +1,5 @@
-import Accommodation from "../accomodation/Accommodation.jsx";
-import jsonData from "../../json.js";
-
-
+import React from "react";
+import Accommodation from "../Accommodation.jsx";
 
 const Home = () => {
     return (
@@ -11,13 +9,11 @@ const Home = () => {
           <h1 className="h1">Chez vous, partout et ailleurs</h1>
         </div>
         <div className="accommodations">
-          {jsonData.map((accommodation, index) => (
-            <Accommodation key={index} accommodation={accommodation} />
-          ))}
+          <Accommodation />
         </div>
       </div>
     );
-  };
-  
-  export default Home;
+};
+
+export default Home;
   
