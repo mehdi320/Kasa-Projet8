@@ -1,12 +1,13 @@
 import proptypes from 'prop-types';
 
 
-function Accommodation({Maison}) {
+function Accommodation({Maisons}) {
+  console.log(Maisons)
   return (
-    Maison.map((maison) => (
-      <div className='accomodation'>
-        <img src={maison.image} alt='accomodation' />
-        <h3>{maison.name}</h3>
+    Maisons.map((item) => (
+      <div className='accomodation' key={item.id}>
+        <img src={item.image} alt='accomodation' />
+        <h3>{item.name}</h3>
       </div>
     ))
   );
