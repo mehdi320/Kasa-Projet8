@@ -1,9 +1,10 @@
 import React from "react";
 import Accommodation from "../Accommodation.jsx";
-import Maison from "../data/maison-json.js";
+import maison from "../../data/maison-json.js";
 
 
 const Home = () => {
+  console.log(maisonaison)
     return (
       <div className="home">
         <div className="banner">
@@ -11,7 +12,7 @@ const Home = () => {
           <h1 className="h1">Chez vous, partout et ailleurs</h1>
         </div>
         <div className="gallery">
-          <Accommodation Maison={Maison} />
+          <Accommodation maison={maison} />
         </div>
       </div>
     );
