@@ -1,7 +1,7 @@
 import proptypes from 'prop-types';
 
 
-function Accommodation({Maisons}) {
+const Accommodation = ({Maisons}) => {
   console.log(Maisons)
   return (
     Maisons.map((item) => (
@@ -13,6 +13,6 @@ function Accommodation({Maisons}) {
   );
 }
 Accommodation.propTypes = {
-  Maison: proptypes.array.isRequired,
+  Maisons: proptypes.array.isRequired,
 };
 export default Accommodation;
