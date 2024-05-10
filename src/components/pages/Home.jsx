@@ -1,5 +1,5 @@
 import React from "react";
-import Accommodation from "../Accommodation.jsx";
+import Accommodation from "../Thumb.jsx";
 import Maisons from "../../data/maison.json";
 
 
@@ -12,6 +12,7 @@ const Home = () => {
           <h1 className="h1">Chez vous, partout et ailleurs</h1>
         </div>
         <div className="gallery">
+
           <Accommodation Maisons={Maisons} />
         </div>
       </div>
