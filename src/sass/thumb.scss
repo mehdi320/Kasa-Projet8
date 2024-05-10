@@ -1,0 +1,38 @@
+.gallery{
+background-color: #F6F6F6;
+border-radius: 25px;
+margin-top: 43px;
+width:100%;
+margin-left: auto;
+margin-right: auto;
+}
+
+.thumb{
+    width: 340px;
+    height: 340px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 99px;
+    padding-left: 60px;
+    padding-bottom: 50px;
+
+
+
+    img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    }
+    
+    h3{
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+    }
+
+}
+        
+        
+

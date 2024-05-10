@@ -7,8 +7,8 @@ const Accommodation = ({ Maisons }) => {
   return (
     <div className='gallery'>
       {Maisons.map((item) => (
-        <div className='accommodation' key={item.id}>
-          <img src={item.cover} alt='accommodation' />
+        <div className='thumb' key={item.id}>
+          <img src={item.cover} alt='thumb' />
           <h3>{item.title}</h3>
         </div>
       ))}
