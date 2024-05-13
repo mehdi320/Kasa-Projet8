@@ -1,7 +1,9 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React from "react";
+import Header from "./Header"; // Assurez-vous que le chemin vers le fichier Header.jsx est correct
+import{ BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import LogementDetails from "./pages/LogementDetails"; // Assurez-vous que le chemin vers le fichier LogementDetails.jsx est correct
+import Description from "./pages/Description";
 
 const App = () => {
   return (
@@ -10,7 +12,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/logements/:id" element={<LogementDetails />} /> {/* Ajoutez une nouvelle route pour les détails du logement */}
+        <Route path="/Descriptions/:id" element={<Description />} />
       </Routes>
     </BrowserRouter>
   );
