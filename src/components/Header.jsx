@@ -1,7 +1,7 @@
 import LogoKasa from '../assets/image/LOGO.png';
 import { NavLink } from 'react-router-dom';
 import React from 'react';
-import Footer from '../Footer'; // Import the Footer component
+
 
 const Header = () => {
     return (
