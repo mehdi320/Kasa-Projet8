@@ -2,7 +2,6 @@ import LogoKasa from '../assets/image/LOGO.png';
 import { NavLink } from 'react-router-dom';
 import React from 'react';
 
-
 const Header = () => {
     return (
         <div className="header">
@@ -21,7 +20,7 @@ const Header = () => {
                     </li>
                 </ul>
             </nav>
-            <Footer /> 
+            
         </div>
     );
 };
