@@ -1,6 +1,6 @@
 import LogoKasa from '../assets/image/LOGO.png';
 import { NavLink } from 'react-router-dom';
-import Footer from './Footer';
+
 
 const Header = () => {
     return (
@@ -20,7 +20,7 @@ const Header = () => {
                     </li>
                 </ul>
             </nav>
-            <Footer />
+          
         </div>
     );
 };
