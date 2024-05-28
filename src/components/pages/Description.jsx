@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import Maisons from './data/maison.json';
+import Maisons from "../../data/maison.json";
 import Error404 from './Error404'; 
 
 const Description = () => {
