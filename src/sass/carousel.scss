@@ -1,0 +1,36 @@
+.custom-carousel {
+  position: relative;
+}
+
+.custom-carousel .carousel .control-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+}
+
+.custom-carousel .carousel .control-arrow:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.custom-carousel .carousel .control-arrow:focus {
+  outline: none;
+}
+
+.custom-carousel .carousel .control-prev {
+  left: 10px;
+}
+
+.custom-carousel .carousel .control-next {
+  right: 10px;
+}
+
+.custom-carousel .carousel .thumbnails {
+  display: none;
+}
