@@ -4,6 +4,7 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Maisons from "../../data/maison.json";
 import Error404 from './Error404';
+import Button from '../Button';
 
 const Description = () => {
   const { id } = useParams();
@@ -37,25 +38,31 @@ const Description = () => {
         ))}
       </Carousel>
       <div>
-        <button onClick={() => handleButtonClick('description')}>Description</button>
-        <button onClick={() => handleButtonClick('equipments')}>Objets</button>
-      </div>
-      {showText && (
-        <div>
-          {console.log("Description affichée :", maison.description)}
-          <p>{maison.description}</p>
-        </div>
-      )}
-      {showEquipments && (
-        <div>
-          {console.log("Équipements :", maison.equipments)}
-          <ul>
-            {maison.equipments.map((equipment, index) => (
-              <li key={index}>{equipment}</li>
-            ))}
-          </ul>
-        </div>
-      )}
+  <Button
+    text="Description"
+    onClick={() => handleButtonClick('description')}
+    show={showText}
+  />
+  <Button
+    text="Objets"
+    onClick={() => handleButtonClick('equipments')}
+    show={showEquipments}
+  />
+</div>
+{showText && (
+  <div>
+    <p>{maison.description}</p>
+  </div>
+)}
+{showEquipments && (
+  <div>
+    <ul>
+      {maison.equipments.map((equipment, index) => (
+        <li key={index}>{equipment}</li>
+      ))}
+    </ul>
+  </div>
+)}
       {console.log("Valeur de showText :", showText)}
       {console.log("Valeur de showEquipments :", showEquipments)}
     </div>
