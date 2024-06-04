@@ -14,7 +14,9 @@ const Button = ({ text, onClick, show }) => {
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: '5px',
-        transition: 'background-color 0.3s ease'
+        transition: 'background-color 0.3s ease',
+        flexDirection: 'row', 
+        justifyContent: 'space-between',
       }}
       onClick={onClick}
     >
@@ -35,6 +37,8 @@ const Button = ({ text, onClick, show }) => {
       />
     </button>
   );
+
+  
 };
 
 export default Button;

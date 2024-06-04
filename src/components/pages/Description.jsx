@@ -38,31 +38,34 @@ const Description = () => {
         ))}
       </Carousel>
       <div>
-  <Button
-    text="Description"
-    onClick={() => handleButtonClick('description')}
-    show={showText}
-  />
-  <Button
-    text="Objets"
-    onClick={() => handleButtonClick('equipments')}
-    show={showEquipments}
-  />
-</div>
-{showText && (
-  <div>
-    <p>{maison.description}</p>
-  </div>
-)}
-{showEquipments && (
-  <div>
-    <ul>
-      {maison.equipments.map((equipment, index) => (
-        <li key={index}>{equipment}</li>
-      ))}
-    </ul>
-  </div>
-)}
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          {/* Ajout d'un conteneur div avec styles flex */}
+          <Button
+            text="Description"
+            onClick={() => handleButtonClick('description')}
+            show={showText}
+          />
+          <Button
+            text="Objets"
+            onClick={() => handleButtonClick('equipments')}
+            show={showEquipments}
+          />
+        </div>
+        {showText && (
+          <div>
+            <p>{maison.description}</p>
+          </div>
+        )}
+        {showEquipments && (
+          <div>
+            <ul>
+              {maison.equipments.map((equipment, index) => (
+                <li key={index}>{equipment}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
       {console.log("Valeur de showText :", showText)}
       {console.log("Valeur de showEquipments :", showEquipments)}
     </div>
