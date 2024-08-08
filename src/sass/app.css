@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header nav ul {
+  display: flex;
+}
+.header nav ul a {
+  text-decoration: none;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+}
+.header nav ul a.underline {
+  text-decoration: underline;
+}
+.header nav ul li {
+  margin: 0 20px;
+  list-style: none;
+}/*# sourceMappingURL=app.css.map */
