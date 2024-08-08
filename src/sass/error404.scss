@@ -1,11 +1,59 @@
-.error-404{
-    color: #FF6060;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 139px;
-    width: 1440px;
-    padding-top: 40px;
+
+
+.error404 {
+  width: 100%;
+  @include flexbox(column, none, center);
+  gap: 139px;
+
+  .error404-title {
+    width: 597px;
+    height: 263px;
+    margin: 0;
+    @include flexbox(column, center, center);
+    @include font-montserrat(288px, $primary-color, 142.6%, 700);
+  }
+
+  .error404-subtitle {
+    @include font-montserrat-500(36px, $primary-color, 142.6%);
+  }
+
+  .error404-text-container {
+    margin-bottom: 139px;
+
+    .error404-text {
+      @include font-montserrat-500(18px, $primary-color, 142.6%);
+      text-decoration-line: underline;
+      cursor: pointer;
+    }
+  }
 }
 
+// Media Queries
 
+@media screen and (max-width: 768px) {
+  .error404 {
+    gap: 113px;
+    @include flexbox(column, center, center);
+
+    .error404-title {
+      width: 100%;
+      height: 0px;
+      @include font-montserrat(96px, $primary-color, 142.6%, 700);
+      padding-top: 90px;
+    }
+
+    .error404-subtitle {
+      width: 100%;
+      text-align: center;
+      @include font-montserrat-500(18px, $primary-color, 142.6%);
+    }
+
+    .error404-text-container {
+      margin-bottom: 113px;
+
+      .error404-text {
+        @include font-montserrat-500(14px, $primary-color, 142.6%);
+      }
+    }
+  }
+}
