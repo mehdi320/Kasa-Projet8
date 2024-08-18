@@ -1,19 +1,100 @@
-.collapse {
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
-    border-radius: 4px;
-  }
-  
-  .collapse-header {
-    background-color: #f5f5f5;
-    padding: 10px;
-    cursor: pointer;
-    border: none;
+@import '../style/Variables_Mixins/Variables_Mixins.scss';
+
+.collapse-container {
+  width: 70%;
+  @include flexbox(column, none, none);
+  margin-bottom: 38px;
+
+  .collapse-title {
+    color: white;
     width: 100%;
-    text-align: left;
+    @include flexbox(row, space-between, center);
+    background-color: $primary-color;
+    border-radius: 5px;
+
+    p {
+      @include font-montserrat-500(24px, white, 142.6%);
+      margin: 10px 0 10px 15px;
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      font-size: 30px;
+      margin-right: 20px;
+      color: white;
+      background: none;
+      border: none;
+      cursor: pointer;
+      transition: all 0.4s ease;
+
+      &:hover {
+        scale: 1.2;
+      }
+
+      &.close {
+        transform: rotate(0deg);
+      }
+
+      &.open {
+        transform: rotate(180deg);
+      }
+    }
   }
-  
+
   .collapse-content {
-    padding: 10px;
+    width: 100%;
+    @include font-montserrat(18px, $primary-color, 142.6%, none);
+    background-color: $secondary-color;
+    border-radius: 5px;
+    z-index: 1;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+
+    &.close {
+      max-height: 0;
+    }
+
+    &.open {
+      max-height: 500px;
+    }
+
+    .collapse-content-text {
+      padding: 20px;
+    }
   }
-  
+}
+
+// Media Queries
+
+@media screen and (max-width: 768px) {
+  .collapse-container {
+    width: 90%;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    margin-bottom: 20px;
+
+    .collapse-title {
+      width: 100%;
+      p {
+        @include font-montserrat-500(13px, white, 142.6%);
+      }
+
+      button {
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .collapse-content {
+      width: 100%;
+      @include font-montserrat(13px, $primary-color, 142.6%, none);
+    }
+  }
+}

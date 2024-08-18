@@ -2,7 +2,6 @@ import { useState } from 'react'; // Importez seulement le hook useState
 import PropTypes from 'prop-types';
 import '../sass/Collapse.scss'; // Chemin correct vers Collapse.scss
 
-
 const Collapse = ({ name, content }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -11,11 +10,21 @@ const Collapse = ({ name, content }) => {
   };
 
   return (
-    <div className="collapse">
-      <button className="collapse-header" onClick={toggleCollapse}>
-        {name}
-      </button>
-      {isOpen && <div className="collapse-content">{content}</div>}
+    <div className={`collapse-container ${isOpen ? 'open' : 'close'}`}>
+      <div className="collapse-title">
+        <p>{name}</p>
+        <button 
+          onClick={toggleCollapse} 
+          className={isOpen ? 'open' : 'close'}
+        >
+          {isOpen ? '-' : '+'}
+        </button>
+      </div>
+      <div className={`collapse-content ${isOpen ? 'open' : 'close'}`}>
+        <div className="collapse-content-text">
+          {content}
+        </div>
+      </div>
     </div>
   );
 };
