@@ -4,7 +4,7 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Maisons from "../../data/maison.json";
 import Error404 from './Error404';
-import Button from '../Button';
+import CollapseLogement from '../CollapseLogement';
 
 const Description = () => {
   const { id } = useParams();
@@ -13,19 +13,6 @@ const Description = () => {
   if (!maison) {
     return <Error404 />;
   }
-
-  const [showText, setShowText] = useState(false);
-  const [showEquipments, setShowEquipments] = useState(false);
-
-  const handleButtonClick = (type) => {
-    if (type === 'description') {
-      setShowText(!showText);
-      setShowEquipments(false);
-    } else if (type === 'equipments') {
-      setShowText(false);
-      setShowEquipments(!showEquipments);
-    }
-  };
 
   return (
     <div>
@@ -38,36 +25,22 @@ const Description = () => {
         ))}
       </Carousel>
       <div>
-        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          {/* Ajout d'un conteneur div avec styles flex */}
-          <Button
-            text="Description"
-            onClick={() => handleButtonClick('description')}
-            show={showText}
-          />
-          <Button
-            text="Objets"
-            onClick={() => handleButtonClick('equipments')}
-            show={showEquipments}
-          />
-        </div>
-        {showText && (
-          <div>
-            <p>{maison.description}</p>
-          </div>
-        )}
-        {showEquipments && (
-          <div>
+        {/* Remplacement des boutons par CollapseLogement */}
+        <CollapseLogement 
+          name="Description" 
+          content={maison.description} 
+        />
+        <CollapseLogement 
+          name="Équipements" 
+          content={
             <ul>
               {maison.equipments.map((equipment, index) => (
                 <li key={index}>{equipment}</li>
               ))}
             </ul>
-          </div>
-        )}
+          } 
+        />
       </div>
-      {console.log("Valeur de showText :", showText)}
-      {console.log("Valeur de showEquipments :", showEquipments)}
     </div>
   );
 };

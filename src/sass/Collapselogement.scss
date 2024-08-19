@@ -1,0 +1,92 @@
+@import '../style/Variables_Mixins/Variables_Mixins.scss';
+
+.collapse-logement-container {
+  width: 100%;
+  @include flexbox(column, none, none);
+  margin-bottom: 20px;
+
+  .collapse-logement-title {
+    color: #333;
+    width: 100%;
+    @include flexbox(row, space-between, center);
+    background-color: #f5f5f5;
+    border-radius: 5px;
+
+    p {
+      @include font-montserrat-500(18px, #333, 142.6%);
+      margin: 10px 0 10px 15px;
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      font-size: 30px;
+      margin-right: 20px;
+      color: #333;
+      background: none;
+      border: none;
+      cursor: pointer;
+      transition: all 0.4s ease;
+
+      &:hover {
+        scale: 1.2;
+      }
+
+      &.close {
+        transform: rotate(0deg);
+      }
+
+      &.open {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .collapse-logement-content {
+    width: 100%;
+    @include font-montserrat(16px, #333, 142.6%, none);
+    background-color: #fafafa;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-out;
+
+    &.close {
+      max-height: 0;
+    }
+
+    &.open {
+      max-height: 400px;
+    }
+
+    .collapse-logement-content-text {
+      padding: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .collapse-logement-container {
+    width: 100%;
+    margin-bottom: 15px;
+
+    .collapse-logement-title {
+      p {
+        @include font-montserrat-500(14px, #333, 142.6%);
+      }
+
+      button {
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .collapse-logement-content {
+      width: 100%;
+      @include font-montserrat(14px, #333, 142.6%, none);
+    }
+  }
+}

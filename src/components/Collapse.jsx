@@ -1,6 +1,6 @@
 import { useState } from 'react'; // Importez seulement le hook useState
 import PropTypes from 'prop-types';
-import '../sass/Collapse.scss'; // Chemin correct vers Collapse.scss
+import '../sass/Collapseabout.scss'; // Chemin correct vers Collapse.scss
 
 const Collapse = ({ name, content }) => {
   const [isOpen, setIsOpen] = useState(false);
