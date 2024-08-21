@@ -24,7 +24,7 @@
       height: 32px;
       font-size: 30px;
       margin-right: 20px;
-      color: #333;
+      color: white;
       background: none;
       border: none;
       cursor: pointer;
@@ -46,12 +46,13 @@
 
   .collapse-logement-content {
     width: 100%;
-    @include font-montserrat(16px, #333, 142.6%, none);
-    background-color: #fafafa;
+    @include font-montserrat(18px, $primary-color, 142.6%, none);
+    background-color: $secondary-color;
     border-radius: 5px;
+    z-index: 1;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.6s ease-out;
+  
 
     &.close {
       max-height: 0;
