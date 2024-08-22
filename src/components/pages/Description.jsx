@@ -24,8 +24,9 @@ const Description = () => {
           </div>
         ))}
       </Carousel>
-      <div>
-        {/* Remplacement des boutons par CollapseLogement */}
+
+      {/* Conteneur pour centrer les boutons de collapse */}
+      <div className="buttons-container">
         <CollapseLogement 
           name="Description" 
           content={maison.description} 
