@@ -4,9 +4,6 @@ footer {
   text-align: center;
   padding: 20px 0;
   margin-bottom: 0;
-  position: absolute;
-  bottom: -165%;
-  left: 0;
   width: 100%;
 }
 footer .footer-logo {
