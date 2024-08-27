@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+.collapse-container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  margin-bottom: 38px;
+}
+.collapse-container .collapse-title {
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff6060;
+  border-radius: 5px;
+}
+.collapse-container .collapse-title p {
+  font-size: 24px;
+  color: white;
+  line-height: 142.6%;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Montserrat";
+  margin: 10px 0 10px 15px;
+}
+.collapse-container .collapse-title button {
+  display: flex;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  font-size: 30px;
+  margin-right: 20px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.collapse-container .collapse-title button:hover {
+  scale: 1.2;
+}
+.collapse-container .collapse-title button.close {
+  transform: rotate(0deg);
+}
+.collapse-container .collapse-title button.open {
+  transform: rotate(180deg);
+}
+.collapse-container .collapse-content {
+  width: 100%;
+  font-size: 18px;
+  color: #ff6060;
+  line-height: 142.6%;
+  font-weight: none;
+  font-style: normal;
+  font-family: "Montserrat";
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  z-index: 1;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-out;
+}
+.collapse-container .collapse-content.close {
+  max-height: 0;
+}
+.collapse-container .collapse-content.open {
+  max-height: 500px;
+}
+.collapse-container .collapse-content .collapse-content-text {
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .collapse-container {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .collapse-container .collapse-title {
+    width: 100%;
+  }
+  .collapse-container .collapse-title p {
+    font-size: 13px;
+    color: white;
+    line-height: 142.6%;
+    font-weight: 500;
+    font-style: normal;
+    font-family: "Montserrat";
+  }
+  .collapse-container .collapse-title button {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+  }
+  .collapse-container .collapse-content {
+    width: 100%;
+    font-size: 13px;
+    color: #ff6060;
+    line-height: 142.6%;
+    font-weight: none;
+    font-style: normal;
+    font-family: "Montserrat";
+  }
+}/*# sourceMappingURL=Collapseabout.css.map */

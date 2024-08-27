@@ -1,0 +1,16 @@
+.main-logement {
+  position: relative;
+  width: 90%;
+  max-width: 1440px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .main-logement {
+    width: 100%;
+  }
+}/*# sourceMappingURL=logement.css.map */
