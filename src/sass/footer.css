@@ -5,6 +5,8 @@ footer {
   padding: 20px 0;
   margin-bottom: 0;
   width: 100%;
+  position: absolute;
+  bottom: -25%;
 }
 footer .footer-logo {
   width: 100px;
