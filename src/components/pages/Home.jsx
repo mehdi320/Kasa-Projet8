@@ -10,7 +10,7 @@ const Home = () => {
         <img src="./images/IMG.png" alt="banner" />
         <h1 className="h1">Chez vous, partout et ailleurs</h1>
       </div>
-      <div className="gallery">
+      <div className="cards-container">
         <Accommodation Maisons={Maisons} />
       </div>
       <footer>
