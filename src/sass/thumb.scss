@@ -1,14 +1,19 @@
-.gallery{
-    background-color: #F6F6F6;
-    border-radius: 25px;
-    margin-top: 43px;
-    width:100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+@import '../style/Variables_Mixins/Variables_Mixins.scss';
+.cards-container {
+  .gallery{
+  background: $secondary-color;
+  width: 90%;
+  max-width: 1240px;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-row-gap: 15px;
+  grid-column-gap: 15px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin: 43px auto;
+  padding: 40px 0;}
   
   .thumb{
     width: 340px;
@@ -36,7 +41,7 @@
       left: 0;
       right: 0;
       padding: 10px;
-      background-color: rgba(0, 0, 0, 0.5);
+
     }
   }
-  
+}

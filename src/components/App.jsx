@@ -1,4 +1,4 @@
-import React from "react";
+
 import Header from "./Header"; // Assurez-vous que le chemin vers le fichier Header.jsx est correct
 import{ BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
