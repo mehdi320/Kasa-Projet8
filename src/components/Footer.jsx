@@ -1,4 +1,4 @@
-import React from 'react';
+
 import LogoKasa from '../assets/image/LOGO.png';
 const Footer = () => {
     return (
