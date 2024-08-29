@@ -2,7 +2,6 @@ import React from "react";
 import Accommodation from "../Thumb.jsx";
 import Maisons from "../../data/maison.json";
 
-
 const Home = () => {
   console.log(Maisons)
     return (
