@@ -1,6 +1,7 @@
 // src/pages/Apropos.jsx
 // import React from 'react'; // Supprimez cette ligne
 import Collapse from '../Collapse';
+import Footer from '../Footer';
 // import '../../style/pages/Apropos/Apropos.scss'; // Assure-toi que ce fichier existe
 // import '../../style/setting.scss'; // Assure-toi que ce fichier existe
 
@@ -35,7 +36,10 @@ const Apropos = () => {
           />
         </div>
       </main>
-
+      <footer>
+        {/* Composant de pied de page (Footer) */}
+        <Footer />
+      </footer>
     </div>
   );
 };

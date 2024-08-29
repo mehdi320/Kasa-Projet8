@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import Footer from './Footer';
+
 
 const Accommodation = ({ Maisons }) => {
   console.log(Maisons);
@@ -15,7 +15,7 @@ const Accommodation = ({ Maisons }) => {
           </Link>
         </div>
       ))}
-        <Footer />
+        
     </div>
   );
 };

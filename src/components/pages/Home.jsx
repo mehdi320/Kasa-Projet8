@@ -1,6 +1,7 @@
 
 import Accommodation from "../Thumb.jsx";
 import Maisons from "../../data/maison.json";
+import Footer from "../Footer";
 
 const Home = () => {
   return (
@@ -9,9 +10,12 @@ const Home = () => {
         <img src="./images/IMG.png" alt="banner" />
         <h1 className="h1">Chez vous, partout et ailleurs</h1>
       </div>
-      <div className="cards-container">
+      <div className="gallery">
         <Accommodation Maisons={Maisons} />
       </div>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };

@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 .header {
@@ -23,6 +25,20 @@
   list-style: none;
 }
 
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 45px;
+  margin-bottom: 50px;
+}
+
+.home {
+  margin-right: 100px;
+  margin-left: 100px;
+}
 .home .banner {
   width: 100%;
   height: 150px;
@@ -46,19 +62,22 @@
   font-size: 2rem;
 }
 
-.gallery {
-  background-color: #F6F6F6;
+.cards-container .gallery {
+  background: #f6f6f6;
+  width: 90%;
+  max-width: 1240px;
   border-radius: 25px;
-  margin-top: 43px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-row-gap: 15px;
+  grid-column-gap: 15px;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
+  margin: 43px auto;
+  padding: 40px 0;
 }
-
-.thumb {
+.cards-container .thumb {
   width: 340px;
   height: 340px;
   cursor: pointer;
@@ -67,14 +86,14 @@
   overflow: hidden;
   position: relative;
 }
-.thumb img {
+.cards-container .thumb img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 25px;
 }
-.thumb h3 {
+.cards-container .thumb h3 {
   color: #FFF;
   font-family: Montserrat;
   font-size: 18px;
@@ -84,31 +103,6 @@
   left: 0;
   right: 0;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-footer {
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  margin-bottom: 0;
-  position: absolute;
-  bottom: -165%;
-  left: 0;
-  width: 100%;
-}
-footer .footer-logo {
-  width: 100px;
-  height: auto;
-  margin: 0 auto 10px;
-  display: block;
-  filter: brightness(0) invert(1);
-}
-footer p {
-  font-size: 14px;
-  margin: 0;
-  text-align: center;
 }
 
 .custom-carousel {
@@ -146,15 +140,20 @@ footer p {
   display: none;
 }
 
-.carousel .slide img {
-  max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover; /* Conserver les proportions de l'image et remplir l'espace disponible */
-}
-
 .carousel img {
   width: 100%;
-  height: 700px;
+  height: 500px; /* Hauteur fixe pour toutes les images */
+  border-radius: 25px; /* Coins arrondis pour toutes les images */
+  -o-object-fit: cover;
+     object-fit: cover; /* Conserver les proportions de l'image tout en remplissant l'espace */
+}
+
+.carousel .slide img {
+  max-width: 100%; /* Empêche l'image de dépasser sa largeur maximale */
+  -o-object-fit: cover;
+     object-fit: cover; /* Cette ligne est redondante ici si elle est déjà définie dans .carousel img */
+  vertical-align: top; /* Évite les espaces blancs sous l'image */
+  border: 0; /* Supprime toute bordure indésirable */
 }
 
 .collapse-container {
