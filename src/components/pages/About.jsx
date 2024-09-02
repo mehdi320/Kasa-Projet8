@@ -1,7 +1,13 @@
 // src/pages/Apropos.jsx
-// import React from 'react'; // Supprimez cette ligne
-import Collapse from '../Collapse';
-import Footer from '../Footer';
+import React from 'react';
+import Collapse from '../Collapse'; // Assurez-vous que le chemin est correct
+import Footer from '../Footer'; // Assurez-vous que le chemin est correct
+import TopBackground from '../TopBackground'; // Importation du composant TopBackground
+import ImageBackground from '/src/assets/images/Montagnes.svg';
+
+
+
+
 // import '../../style/pages/Apropos/Apropos.scss'; // Assure-toi que ce fichier existe
 // import '../../style/setting.scss'; // Assure-toi que ce fichier existe
 
@@ -10,14 +16,16 @@ const Apropos = () => {
     <div>
       <header className="defaultstyle">
         {/* Composant haut de page (Header) */}
-        {/* <Header /> */} {/* Si tu n'as pas Header, commente ou supprime cette ligne */}
       </header>
       <main className="apropos-container">
-        {/* Remplace ceci avec une image d'arrière-plan si tu en as une */}
-        <div className="top-background">
-          {/* <img src={ImageBackground} alt="Image de montagnes" /> */}
-        </div>
+        {/* Composant d'arrière-plan supérieur (TopBackground) avec image de montagnes */}
+        <TopBackground
+          picture={ImageBackground}
+          alt="Image de montagnes"
+          title=""
+        />
         <div className="collapse-container-apropos">
+          {/* Plusieurs composants Collapse pour afficher les informations à propos de Kasa */}
           <Collapse
             name="Fiabilité"
             content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes informations sont régulièrement vérifiées par nos équipes."

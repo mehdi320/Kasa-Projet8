@@ -1,5 +1,5 @@
 
-import LogoKasa from '../assets/image/LOGO.png';
+import LogoKasa from '../assets/images/logoFooter.png';
 const Footer = () => {
     return (
         <footer>

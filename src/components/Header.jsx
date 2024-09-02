@@ -1,4 +1,4 @@
-import LogoKasa from '../assets/image/LOGO.png';
+import LogoKasa from '../assets/images/LOGO.png';
 import { NavLink } from 'react-router-dom';
 
 

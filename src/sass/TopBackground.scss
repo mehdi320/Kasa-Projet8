@@ -1,0 +1,50 @@
+@import '../style/Variables_Mixins/Variables_Mixins.scss';
+
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  @include flexbox(row, center, center);
+
+  .background-img {
+    position: relative;
+    border-radius: 25px;
+    opacity: 1;
+    width: 90%;
+    max-width: 1240px;
+    height: 223px;
+    object-fit: cover;
+    mix-blend-mode: darken;
+    filter: brightness(0.75);
+  }
+
+  .background-title {
+    @include font-montserrat-500(40px, white, 142.6%);
+    position: absolute;
+  }
+}
+
+// Media Queries
+
+@media screen and (max-width: 768px) {
+  .background-container {
+    width: 100%;
+    height: 111px;
+    
+    @include flexbox(row, center, center);
+
+    .background-img {
+      border-radius: 10px;
+      width: 90%;
+      height: 111px;
+    }
+
+    .background-title {
+      display: flex;
+      justify-content: flex-start;
+      @include font-montserrat-500(24px, white, 100%);
+      width: 65%;
+      
+    }
+  }
+}

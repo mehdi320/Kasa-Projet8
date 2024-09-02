@@ -1,3 +1,34 @@
 .apropos-container {
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.collapse-container-apropos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 38px;
+}
+
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.collapse-container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  margin-bottom: 38px;
 }/*# sourceMappingURL=apropos.css.map */
