@@ -1,4 +1,3 @@
-
 import { useParams } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -7,6 +6,10 @@ import Error404 from './Error404';
 import CollapseLogement from '../CollapseLogement';
 import '../../sass/logement.scss';  // Correct path
 import Footer from '../Footer';
+import TitleLogement from '../TitleLogement';
+import LogementTag from '../LogementTags';
+import LogementProfil from '../LogementProfil';
+import LogementRating from '../LogementRating';
 
 const Description = () => {
   const { id } = useParams();
@@ -18,37 +21,45 @@ const Description = () => {
 
   return (
     <div className="main-logement">
-      <div>
-      
-        <Carousel className="custom-carousel">
-          {maison.pictures.map((pic, index) => (
-            <div key={index}>
-              <img src={pic} alt={`Image ${index}`} />
-            </div>
-          ))}
-        </Carousel>
-
-       <div><h1>{maison.title}</h1></div>
-
-        <div className="buttons-container">
-          <CollapseLogement 
-            name="Description" 
-            content={maison.description} 
+      <Carousel className="custom-carousel">
+        {maison.pictures.map((pic, index) => (
+          <div key={index}>
+            <img src={pic} alt={`Image ${index}`} />
+          </div>
+        ))}
+      </Carousel>
+  
+      <div className="first-container">
+        <div>
+          <TitleLogement title={maison.title} subtitle={maison.location} />
+          <LogementTag />
+        </div>
+  
+        <div className="logement-profil-mobile">
+          <LogementProfil
+            id={maison.id}
+            hostPicture={maison.host.picture}
+            hostName={maison.host.name}
           />
-          <CollapseLogement 
-            name="Équipements" 
-            content={
-              <ul>
-                {maison.equipments.map((equipment, index) => (
-                  <li key={index}>{equipment}</li>
-                ))}
-              </ul>
-            } 
-          />
+          <LogementRating rating={maison.rating} />
         </div>
       </div>
+  
+      <div className="buttons-container">
+        <CollapseLogement name="Description" content={maison.description} />
+        <CollapseLogement
+          name="Équipements"
+          content={
+            <ul>
+              {maison.equipments.map((equipment, index) => (
+                <li key={index}>{equipment}</li>
+              ))}
+            </ul>
+          }
+        />
+      </div>
+  
       <footer>
-        {/* Composant de pied de page (Footer) */}
         <Footer />
       </footer>
     </div>
