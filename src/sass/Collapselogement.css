@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
 .buttons-container {
   display: flex;
   flex-direction: row;
@@ -12,8 +13,9 @@
   margin-bottom: 20px;
   border-radius: 5px;
 }
+
 .collapse-logement-container .collapse-logement-title {
-  width: 100%;
+  width: 85%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,12 +24,17 @@
   border-radius: 10px;
   cursor: pointer;
 }
+
 .collapse-logement-container .collapse-logement-title p {
+  font-size: 24px;
   color: white;
+  line-height: 142.6%;
   font-weight: 500;
-  font-size: 18px;
-  margin: 0;
+  font-style: normal;
+  font-family: "Montserrat";
+  margin: 10px 0 10px 15px;
 }
+
 .collapse-logement-container .collapse-logement-title button {
   width: 32px;
   height: 32px;
@@ -38,15 +45,19 @@
   cursor: pointer;
   transition: transform 0.3s ease;
 }
+
 .collapse-logement-container .collapse-logement-title button:hover {
   transform: scale(1.1);
 }
+
 .collapse-logement-container .collapse-logement-title button.close {
   transform: rotate(0deg);
 }
+
 .collapse-logement-container .collapse-logement-title button.open {
   transform: rotate(180deg);
 }
+
 .collapse-logement-container .collapse-logement-content {
   width: 100%;
   background-color: #f6f6f6;
@@ -55,9 +66,11 @@
   transition: max-height 0.4s ease;
   max-height: 0;
 }
+
 .collapse-logement-container .collapse-logement-content.open {
   max-height: 400px;
 }
+
 .collapse-logement-container .collapse-logement-content .collapse-logement-content-text {
   padding: 15px;
   color: #666;
@@ -69,22 +82,29 @@
   .collapse-logement-container {
     margin-bottom: 15px;
   }
+
   .collapse-logement-container .collapse-logement-title {
     padding: 10px 15px;
   }
+
   .collapse-logement-container .collapse-logement-title p {
     font-size: 14px;
     color: white;
   }
+
   .collapse-logement-container .collapse-logement-title button {
     width: 28px;
     height: 28px;
   }
+
   .collapse-logement-container .collapse-logement-content {
     padding: 10px;
   }
+
   .collapse-logement-container .collapse-logement-content .collapse-logement-content-text {
     font-size: 14px;
     color: #666;
   }
-}/*# sourceMappingURL=Collapselogement.css.map */
+}
+
+/*# sourceMappingURL=Collapselogement.css.map */
