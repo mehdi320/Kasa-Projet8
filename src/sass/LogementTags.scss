@@ -1,0 +1,33 @@
+@import '../style/Variables_Mixins/Variables_Mixins.scss';
+
+.logements-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 24px;
+
+  .logements-tag {
+    width: auto;
+    border-radius: 10px;
+    flex-shrink: 0;
+    padding: 3px 30px;
+    background: $primary-color;
+    @include font-montserrat-500(14px, white, 142.6%);
+    @include flexbox(row, center, center);
+  }
+}
+
+// Media Queries
+
+@media screen and (max-width: 768px) {
+  .logements-tags-container {
+    margin-top: 10px;
+    margin-bottom: 17px;
+
+    .logements-tag {
+      @include font-montserrat-500(10px, white, 142.6%);
+      padding: 3px 20px;
+    }
+  }
+}

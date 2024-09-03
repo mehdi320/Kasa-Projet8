@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+.logement-profil-container {
+  width: 167px;
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 21px;
+  margin-left: 23px;
+}
+.logement-profil-container .host-name {
+  font-size: 18px;
+  color: #ff6060;
+  line-height: 142.6%;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Montserrat";
+  text-align: right;
+  margin: 0;
+}
+.logement-profil-container .host-picture {
+  height: 100%;
+  border-radius: 50%;
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .logement-profil-container {
+    margin: 0;
+  }
+  .logement-profil-container .host-name {
+    font-size: 14px;
+    color: #ff6060;
+    line-height: 142.6%;
+    font-weight: 500;
+    font-style: normal;
+    font-family: "Montserrat";
+    width: 93px;
+  }
+}/*# sourceMappingURL=LogementProfil.css.map */

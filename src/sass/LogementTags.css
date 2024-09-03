@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+.logements-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+.logements-tags-container .logements-tag {
+  width: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+  padding: 3px 30px;
+  background: #ff6060;
+  font-size: 14px;
+  color: white;
+  line-height: 142.6%;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Montserrat";
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .logements-tags-container {
+    margin-top: 10px;
+    margin-bottom: 17px;
+  }
+  .logements-tags-container .logements-tag {
+    font-size: 10px;
+    color: white;
+    line-height: 142.6%;
+    font-weight: 500;
+    font-style: normal;
+    font-family: "Montserrat";
+    padding: 3px 20px;
+  }
+}/*# sourceMappingURL=LogementTags.css.map */

@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+.title-logement h1 {
+  font-size: 36px;
+  color: #ff6060;
+  line-height: 142.6%;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Montserrat";
+}
+.title-logement p {
+  font-size: 18px;
+  color: #ff6060;
+  line-height: 142.6%;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Montserrat";
+}
+
+@media screen and (max-width: 768px) {
+  .title-logement h1 {
+    width: 335px;
+    font-size: 18px;
+    color: #ff6060;
+    line-height: 142.6%;
+    font-weight: 500;
+    font-style: normal;
+    font-family: "Montserrat";
+  }
+  .title-logement p {
+    font-size: 14px;
+    color: #ff6060;
+    line-height: 142.6%;
+    font-weight: 500;
+    font-style: normal;
+    font-family: "Montserrat";
+  }
+}/*# sourceMappingURL=TitleLogement.css.map */

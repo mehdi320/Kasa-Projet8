@@ -1,0 +1,26 @@
+@import '../style/Variables_Mixins/Variables_Mixins.scss';
+
+.title-logement {
+  h1 {
+    @include font-montserrat-500(36px, $primary-color, 142.6%);
+  }
+
+  p {
+    @include font-montserrat-500(18px, $primary-color, 142.6%);
+  }
+}
+
+// Media Queries
+
+@media screen and (max-width: 768px) {
+  .title-logement {
+    h1 {
+      width: 335px;
+      @include font-montserrat-500(18px, $primary-color, 142.6%);
+    }
+
+    p {
+      @include font-montserrat-500(14px, $primary-color, 142.6%);
+    }
+  }
+}

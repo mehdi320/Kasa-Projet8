@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+.logement-rating {
+  display: flex;
+  font-size: 25px;
+}
+.logement-rating .star {
+  margin-left: 10px;
+  color: #ff6060;
+}
+.logement-rating .star-empty {
+  color: #e3e3e3;
+}
+
+@media screen and (max-width: 768px) {
+  .logement-rating {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=LogementRating.css.map */

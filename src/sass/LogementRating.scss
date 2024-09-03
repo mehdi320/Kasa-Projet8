@@ -1,0 +1,23 @@
+@import '../style/Variables_Mixins/Variables_Mixins.scss';
+
+.logement-rating {
+  display: flex;
+  font-size: 25px;
+
+  .star {
+    margin-left: 10px;
+    color: $primary-color;
+  }
+
+  .star-empty {
+    color: $star-empty;
+  }
+}
+
+// Media Queries
+
+@media screen and (max-width: 768px) {
+  .logement-rating {
+    font-size: 18px;
+  }
+}

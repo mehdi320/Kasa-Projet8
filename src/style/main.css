@@ -3,6 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 .header {
   display: flex;
   justify-content: space-between;
@@ -441,5 +445,139 @@
     font-style: normal;
     font-family: "Montserrat";
     width: 65%;
+  }
+}
+.title-logement h1 {
+  font-size: 36px;
+  color: #ff6060;
+  line-height: 142.6%;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Montserrat";
+}
+.title-logement p {
+  font-size: 18px;
+  color: #ff6060;
+  line-height: 142.6%;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Montserrat";
+}
+
+@media screen and (max-width: 768px) {
+  .title-logement h1 {
+    width: 335px;
+    font-size: 18px;
+    color: #ff6060;
+    line-height: 142.6%;
+    font-weight: 500;
+    font-style: normal;
+    font-family: "Montserrat";
+  }
+  .title-logement p {
+    font-size: 14px;
+    color: #ff6060;
+    line-height: 142.6%;
+    font-weight: 500;
+    font-style: normal;
+    font-family: "Montserrat";
+  }
+}
+.logements-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+.logements-tags-container .logements-tag {
+  width: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+  padding: 3px 30px;
+  background: #ff6060;
+  font-size: 14px;
+  color: white;
+  line-height: 142.6%;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Montserrat";
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .logements-tags-container {
+    margin-top: 10px;
+    margin-bottom: 17px;
+  }
+  .logements-tags-container .logements-tag {
+    font-size: 10px;
+    color: white;
+    line-height: 142.6%;
+    font-weight: 500;
+    font-style: normal;
+    font-family: "Montserrat";
+    padding: 3px 20px;
+  }
+}
+.logement-rating {
+  display: flex;
+  font-size: 25px;
+}
+.logement-rating .star {
+  margin-left: 10px;
+  color: #ff6060;
+}
+.logement-rating .star-empty {
+  color: #e3e3e3;
+}
+
+@media screen and (max-width: 768px) {
+  .logement-rating {
+    font-size: 18px;
+  }
+}
+.logement-profil-container {
+  width: 167px;
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 21px;
+  margin-left: 23px;
+}
+.logement-profil-container .host-name {
+  font-size: 18px;
+  color: #ff6060;
+  line-height: 142.6%;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Montserrat";
+  text-align: right;
+  margin: 0;
+}
+.logement-profil-container .host-picture {
+  height: 100%;
+  border-radius: 50%;
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .logement-profil-container {
+    margin: 0;
+  }
+  .logement-profil-container .host-name {
+    font-size: 14px;
+    color: #ff6060;
+    line-height: 142.6%;
+    font-weight: 500;
+    font-style: normal;
+    font-family: "Montserrat";
+    width: 93px;
   }
 }/*# sourceMappingURL=main.css.map */
