@@ -1,22 +1,49 @@
-footer {
-  background-color: #000;
-  color: #000;
-  text-align: center;
-  padding: 20px 0;
-  margin-bottom: 0;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+.footer-container {
+  background-color: black;
   width: 100%;
-  position: absolute;
-  bottom: -25%;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 66px 0 29px 0;
 }
-footer .footer-logo {
-  width: 100px;
-  height: auto;
-  margin: 0 auto 10px;
-  display: block;
-  filter: brightness(0) invert(1);
+.footer-container .footer-logo {
+  width: 122px;
+  height: 39.444px;
 }
-footer p {
-  font-size: 14px;
-  margin: 0;
+.footer-container .footer-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 513px;
+  height: 46px;
+  padding-top: 29px;
+}
+.footer-container .footer-text-container .footer-text {
+  font-size: 24px;
+  color: white;
+  line-height: 142.6%;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Montserrat";
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container .footer-text-container {
+    width: 133px;
+    height: 46px;
+    padding-top: 0;
+  }
+  .footer-container .footer-text-container .footer-text {
+    font-size: 12px;
+    color: white;
+    line-height: 142.6%;
+    font-weight: 500;
+    font-style: normal;
+    font-family: "Montserrat";
+  }
 }/*# sourceMappingURL=footer.css.map */

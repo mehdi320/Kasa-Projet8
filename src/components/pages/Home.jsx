@@ -13,10 +13,9 @@ const Home = () => {
       <div className="cards-container">
         <Accommodation Maisons={Maisons} />
       </div>
-      <footer>
         <Footer />
-      </footer>
     </div>
+
   );
 };
 
