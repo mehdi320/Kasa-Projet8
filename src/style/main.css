@@ -7,6 +7,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 .header {
   display: flex;
   justify-content: space-between;
@@ -67,6 +68,12 @@
   font-size: 2rem;
 }
 
+.body {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+}
+
 .cards-container .gallery {
   background: #f6f6f6;
   width: 90%;
@@ -110,6 +117,54 @@
   padding: 10px;
 }
 
+.footer-container {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 66px 0 29px 0;
+}
+.footer-container .footer-logo {
+  width: 122px;
+  height: 39.444px;
+}
+.footer-container .footer-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 513px;
+  height: 46px;
+  padding-top: 29px;
+}
+.footer-container .footer-text-container .footer-text {
+  font-size: 24px;
+  color: white;
+  line-height: 142.6%;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container .footer-text-container {
+    width: 133px;
+    height: 46px;
+    padding-top: 0;
+  }
+  .footer-container .footer-text-container .footer-text {
+    font-size: 12px;
+    color: white;
+    line-height: 142.6%;
+    font-weight: 500;
+    font-style: normal;
+    font-family: "Montserrat";
+  }
+}
 .custom-carousel {
   position: relative;
 }

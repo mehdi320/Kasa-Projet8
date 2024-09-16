@@ -5,6 +5,7 @@ import Footer from "../Footer";
 
 const Home = () => {
   return (
+    <div className="body">
     <div className="home">
       <div className="banner">
         <img src="./images/IMG.png" alt="banner" />
@@ -12,6 +13,7 @@ const Home = () => {
       </div>
       <div className="cards-container">
         <Accommodation Maisons={Maisons} />
+        </div>
       </div>
         <Footer />
     </div>
