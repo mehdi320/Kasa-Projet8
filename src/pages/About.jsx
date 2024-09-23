@@ -3,14 +3,9 @@ import React from 'react';
 import Collapse from '../components/Collapse';
  // Assurez-vous que le chemin est correct
 import Footer from '../components/Footer'; // Assurez-vous que le chemin est correct
-import TopBackground from '../TopBackground'; // Importation du composant TopBackground
+import '../sass/TopBackground.scss'; // Importation du composant TopBackground
 import ImageBackground from '/src/assets/images/Montagnes.svg';
 
-
-
-
-// import '../../style/pages/Apropos/Apropos.scss'; // Assure-toi que ce fichier existe
-// import '../../style/setting.scss'; // Assure-toi que ce fichier existe
 
 const Apropos = () => {
   return (

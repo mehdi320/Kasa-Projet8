@@ -5,10 +5,14 @@ import Maisons from "../data/maison.json";
 import Error404 from './Error404';
 import CollapseLogement from '../components/CollapseLogement';
 import Footer from '../components/Footer';
-import TitleLogement from '../TitleLogement';
-import LogementTag from '../LogementTags';
-import LogementProfil from '../LogementProfil';
-import LogementRating from '../LogementRating';
+import TitleLogement from '../components/TitleLogement';
+import LogementTag from "../components/LogementTags";
+import LogementProfil from '../components/LogementProfil';
+import LogementRating from '../components/LogementRating';
+import "../sass/TitleLogement.scss";
+import "../sass/LogementTags.scss";
+import "../sass/LogementProfil.scss";
+import "../sass/LogementRating.scss";
 
 const Description = () => {
   const { id } = useParams();
@@ -31,7 +35,7 @@ const Description = () => {
       <div className="first-container">
         <div>
           <TitleLogement title={maison.title} subtitle={maison.location} />
-          <LogementTag />
+          <LogementTag tags={maison.tags} />
         </div>
   
         <div className="logement-profil-mobile">
