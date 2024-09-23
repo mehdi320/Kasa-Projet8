@@ -1,10 +1,10 @@
 
 import Header from "./Header"; // Assurez-vous que le chemin vers le fichier Header.jsx est correct
 import{ BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Description from "./pages/Description";
-import Error404 from "./pages/Error404";
+import Home from "../pages/Home";
+import About from "../pages/About";
+import Description from "../pages/Description";
+import Error404 from "../pages/Error404";
 
 const App = () => {
   return (

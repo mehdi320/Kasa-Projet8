@@ -637,4 +637,23 @@
     font-family: "Montserrat";
     width: 93px;
   }
+}
+.main-logement {
+  position: relative;
+  width: 90%;
+  max-width: 1440px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.first-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-logement {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
