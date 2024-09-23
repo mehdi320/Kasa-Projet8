@@ -1,7 +1,7 @@
 
-import Accommodation from "../Thumb.jsx";
-import Maisons from "../../data/maison.json";
-import Footer from "../Footer";
+import Accommodation from "../components/Thumb.jsx";
+import Maisons from "../data/maison.json";
+import Footer from "../components/Footer.jsx";
 
 const Home = () => {
   return (
