@@ -32,13 +32,15 @@
 }
 
 .header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
   margin-top: 45px;
   margin-bottom: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
 }
 
 .home {
