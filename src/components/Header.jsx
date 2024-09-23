@@ -1,11 +1,12 @@
 import LogoKasa from '../assets/images/LOGO.png';
 import { NavLink } from 'react-router-dom';
 
-
 const Header = () => {
     return (
         <div className="header">
-            <img src={LogoKasa} alt="LogoKasa"/>
+            <NavLink to="/">
+                <img src={LogoKasa} alt="LogoKasa" />
+            </NavLink>
             <nav className="header-nav">
                 <ul>
                     <li>
@@ -20,7 +21,6 @@ const Header = () => {
                     </li>
                 </ul>
             </nav>
-          
         </div>
     );
 };
