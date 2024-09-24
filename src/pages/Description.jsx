@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+// Remplacer l'import du carrousel externe par ton propre carrousel
+import Carousel from '../components/Gallery'; // Assure-toi que le chemin est correct vers ton composant Carousel
 import Maisons from "../data/maison.json";
 import Error404 from './Error404';
 import CollapseLogement from '../components/CollapseLogement';
@@ -9,6 +9,9 @@ import TitleLogement from '../components/TitleLogement';
 import LogementTag from "../components/LogementTags";
 import LogementProfil from '../components/LogementProfil';
 import LogementRating from '../components/LogementRating';
+
+// Importer le fichier SCSS du carrousel
+import "../sass/gallery.scss"; // Remplace par le chemin correct de ton fichier scss
 import "../sass/TitleLogement.scss";
 import "../sass/LogementTags.scss";
 import "../sass/LogementProfil.scss";
@@ -24,13 +27,9 @@ const Description = () => {
 
   return (
     <div className="main-logement">
-      <Carousel className="custom-carousel">
-        {maison.pictures.map((pic, index) => (
-          <div key={index}>
-            <img src={pic} alt={`Image ${index}`} />
-          </div>
-        ))}
-      </Carousel>
+      {/* Utiliser ton propre composant de carrousel */}
+      <Carousel pictures={maison.pictures} />
+
   
       <div className="first-container">
         <div>

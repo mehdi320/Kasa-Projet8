@@ -1,21 +1,24 @@
-import React, { useState } from "react";
-import maison from "./data/maison.data";
-// Assuming your data is exported from this file
+import { useState } from "react";
+import PropTypes from 'prop-types';
 
-const Carousel = () => {
+const Carousel = ({ pictures }) => {
   const [index, setIndex] = useState(0);
   
   const nextSlide = () => {
-    setIndex((prevIndex) => (prevIndex + 1) % maison.pictures.length);
+    setIndex((prevIndex) => (prevIndex + 1) % pictures.length);
   };
 
   const prevSlide = () => {
-    setIndex((prevIndex) => (prevIndex - 1 + maison.pictures.length) % maison.pictures.length);
+    setIndex((prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length);
   };
 
   const updateBannerTitleAndImage = (i) => {
-    return maison.pictures[i];
+    return pictures[i];
   };
+
+  if (!pictures || pictures.length === 0) {
+    return <p>No images available</p>; // Fallback en cas de tableau vide ou non défini
+  }
 
   return (
     <div className="carousel">
@@ -29,7 +32,7 @@ const Carousel = () => {
         </button>
       </div>
       <div className="dots">
-        {maison.pictures.map((_, i) => (
+        {pictures.map((_, i) => (
           <div
             key={i}
             className={`dot ${i === index ? "dot_selected" : ""}`}
@@ -39,6 +42,10 @@ const Carousel = () => {
       </div>
     </div>
   );
+};
+
+Carousel.propTypes = {
+  pictures: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Carousel;
