@@ -1,0 +1,47 @@
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .carousel-content img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .arrow_left, .arrow_right {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 24px;
+  }
+  
+  .arrow_left {
+    left: 10px;
+  }
+  
+  .arrow_right {
+    right: 10px;
+  }
+  
+  .dots {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: grey;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dot_selected {
+    background-color: black;
+  }
+  
