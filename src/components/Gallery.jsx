@@ -1,51 +1,75 @@
-import { useState } from "react";
-import PropTypes from 'prop-types';
+/**
+ * Composant Carrousel - Composant de carrousel avec une liste d'images.
+ * @param {Object} props - Les propriétés du Carrousel.
+ * @param {Array} props.images - La liste d'images du Carrousel.
+ * @returns {JSX.Element} Le composant Carrousel.
+ */
 
-const Carousel = ({ pictures }) => {
-  const [index, setIndex] = useState(0);
-  
+
+import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import '../sass/gallery.scss'; // Modifie le chemin selon ton organisation
+
+const Carrousel = ({ images }) => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
   const nextSlide = () => {
-    setIndex((prevIndex) => (prevIndex + 1) % pictures.length);
+    setCurrentSlide((previousSlide) =>
+      previousSlide === images.length - 1 ? 0 : previousSlide + 1
+    );
   };
 
-  const prevSlide = () => {
-    setIndex((prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length);
+  const previousSlide = () => {
+    setCurrentSlide((previousSlide) =>
+      previousSlide === 0 ? images.length - 1 : previousSlide - 1
+    );
   };
-
-  const updateBannerTitleAndImage = (i) => {
-    return pictures[i];
-  };
-
-  if (!pictures || pictures.length === 0) {
-    return <p>No images available</p>; // Fallback en cas de tableau vide ou non défini
-  }
 
   return (
     <div className="carousel">
-      <div className="carousel-content">
-        <button className="arrow_left" onClick={prevSlide}>
-          &#10094;
+      {images.length > 1 && (
+        <button className="previousButton" onClick={previousSlide}>
+          <FontAwesomeIcon icon={faChevronLeft} />
         </button>
-        <img src={updateBannerTitleAndImage(index)} alt={`Image ${index}`} />
-        <button className="arrow_right" onClick={nextSlide}>
-          &#10095;
-        </button>
-      </div>
-      <div className="dots">
-        {pictures.map((_, i) => (
+      )}
+
+      <div className="carousel-container">
+        {images.map((image, index) => (
           <div
-            key={i}
-            className={`dot ${i === index ? "dot_selected" : ""}`}
-            onClick={() => setIndex(i)}
-          ></div>
+            className={`carousel-img ${currentSlide === index ? 'active' : ''}`}
+            key={index}
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              opacity: currentSlide === index ? 1 : 0,
+              transition: 'opacity 0.5s ease',
+              zIndex: currentSlide === index ? 1 : 0,
+            }}
+          >
+            <img
+              className="setImg carousel-img"
+              src={image}
+              alt={`Slide ${index}`}
+            />
+          </div>
         ))}
       </div>
+
+      {images.length > 1 && (
+        <button className="nextButton" onClick={nextSlide}>
+          <FontAwesomeIcon icon={faChevronRight} />
+        </button>
+      )}
+
+      {images.length > 1 && (
+        <div className="carousel-counter">
+          {currentSlide + 1} / {images.length}
+        </div>
+      )}
     </div>
   );
 };
 
-Carousel.propTypes = {
-  pictures: PropTypes.arrayOf(PropTypes.string).isRequired,
-};
-
-export default Carousel;
+export default Carrousel;
