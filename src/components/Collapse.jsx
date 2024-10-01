@@ -1,8 +1,10 @@
-import { useState } from 'react'; // Importez seulement le hook useState
+import { useState } from 'react';
 import PropTypes from 'prop-types';
-import '../sass/Collapseabout.scss'; // Chemin correct vers Collapse.scss
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import '../sass/Collapselogement.scss'; // Tu peux aussi utiliser l'autre fichier SCSS si nécessaire
 
-const Collapse = ({ name, content }) => {
+const Collapse = ({ name, content, customClass = '' }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
@@ -10,14 +12,11 @@ const Collapse = ({ name, content }) => {
   };
 
   return (
-    <div className={`collapse-container ${isOpen ? 'open' : 'close'}`}>
-      <div className="collapse-title">
+    <div className={`collapse-container ${customClass} ${isOpen ? 'open' : 'close'}`}>
+      <div className="collapse-title" onClick={toggleCollapse}>
         <p>{name}</p>
-        <button 
-          onClick={toggleCollapse} 
-          className={isOpen ? 'open' : 'close'}
-        >
-          {isOpen ? '-' : '+'}
+        <button className={isOpen ? 'open' : 'close'}>
+          <FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronDown} />
         </button>
       </div>
       <div className={`collapse-content ${isOpen ? 'open' : 'close'}`}>
@@ -32,6 +31,7 @@ const Collapse = ({ name, content }) => {
 Collapse.propTypes = {
   name: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
+  customClass: PropTypes.string,
 };
 
 export default Collapse;
