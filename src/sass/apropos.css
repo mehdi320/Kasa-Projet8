@@ -31,4 +31,10 @@
   justify-content: none;
   align-items: none;
   margin-bottom: 38px;
+}
+
+@media screen and (max-width: 768px) {
+  .collapse-container-apropos {
+    margin-top: 19px;
+  }
 }/*# sourceMappingURL=apropos.css.map */

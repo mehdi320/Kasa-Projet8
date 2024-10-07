@@ -45,3 +45,17 @@
     }
   }
 }
+
+
+// Media Queries
+
+@media screen and (max-width: 768px) {
+  .cards-container .thumb img {
+    background: none;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 0;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 0;
+  }
+}

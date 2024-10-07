@@ -9,3 +9,32 @@
     align-items: center;
     max-width: 1440px;
 }
+
+
+// Media Queries
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .header {
+        display: flex;
+        width: 335px;
+        align-items: center;
+    }
+  
+    .header-logo {
+      width: 145px; /* Garder la taille du logo à 145px */
+    }
+  
+    .header-nav ul {
+      width: 100%;
+      justify-content: space-between;
+      gap: 26px; /* Ajustement du gap pour la navigation */
+    }
+  
+    .header-nav a {
+      font-size: 12px; /* Ajuster la taille de la police */
+      text-transform: uppercase; /* Texte en majuscules */
+      width: auto;
+    }
+  }
+  
