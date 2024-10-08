@@ -5,16 +5,21 @@
  * @returns {JSX.Element} Le composant TitleLogement.
  */
 
+// Importation du fichier de style pour styliser le composant TitleLogement (commenté ici mais à activer selon l'organisation du projet).
 // import '../../style/components/TitleLogement/TitleLogement.scss'
 
 function TitleLogement({ title, subtitle }) {
-    return (
-      <div className="title-logement">
-        <h1>{title}</h1>
-        <p>{subtitle}</p>
-      </div>
-    )
-  }
-  
-  export default TitleLogement
-  
+  // Retourne une div contenant le titre et le sous-titre du logement.
+  return (
+    <div className="title-logement">
+      {/* Affichage du titre dans un élément h1 */}
+      <h1>{title}</h1>
+      
+      {/* Affichage du sous-titre dans un élément p */}
+      <p>{subtitle}</p>
+    </div>
+  );
+}
+
+// Exportation du composant pour l'utiliser dans d'autres parties de l'application.
+export default TitleLogement;

@@ -6,16 +6,21 @@
  * @returns {JSX.Element} Le composant LogementProfil.
  */
 
+// Importation du fichier de style pour styliser le composant LogementProfil (commenté pour le moment).
 // import '../../style/components/LogementProfil/LogementProfil.scss'
 
 function LogementProfil({ id, hostName, hostPicture }) {
-    return (
-      <div className="logement-profil-container">
-        <p className="host-name">{hostName}</p>
-        <img className="host-picture" key={id} src={hostPicture} alt={hostName} />
-      </div>
-    )
-  }
-  
-  export default LogementProfil
-  
+  // Le composant retourne un conteneur avec le nom de l'hôte et son image.
+  return (
+    <div className="logement-profil-container">
+      {/* Paragraphe affichant le nom de l'hôte */}
+      <p className="host-name">{hostName}</p>
+
+      {/* Image de l'hôte avec une clé unique basée sur l'id et une balise alt contenant le nom de l'hôte */}
+      <img className="host-picture" key={id} src={hostPicture} alt={hostName} />
+    </div>
+  )
+}
+
+// Exportation du composant LogementProfil pour pouvoir l'utiliser dans d'autres parties de l'application.
+export default LogementProfil
