@@ -6,6 +6,7 @@
 
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import PropTypes from 'prop-types'
 // import '../../style/components/LogementRating/LogementRating.scss';
 
 function LogementRating({ rating }) {
@@ -27,5 +28,9 @@ function LogementRating({ rating }) {
     </div>
   )
 }
+LogementRating.propTypes = {
+  rating: PropTypes.number.isRequired,
+}
 
 export default LogementRating
+

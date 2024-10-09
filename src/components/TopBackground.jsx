@@ -22,5 +22,14 @@ function TopBackground({ picture, alt, title }) {
   );
 }
 
+// Importation de PropTypes pour la validation des props.
+import PropTypes from 'prop-types';
+
 // Exportation du composant pour qu'il puisse être utilisé dans d'autres parties de l'application.
+TopBackground.propTypes = {
+  picture: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+};
+
 export default TopBackground;

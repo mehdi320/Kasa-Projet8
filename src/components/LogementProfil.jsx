@@ -9,6 +9,8 @@
 // Importation du fichier de style pour styliser le composant LogementProfil (commenté pour le moment).
 // import '../../style/components/LogementProfil/LogementProfil.scss'
 
+import PropTypes from 'prop-types';
+
 function LogementProfil({ id, hostName, hostPicture }) {
   // Le composant retourne un conteneur avec le nom de l'hôte et son image.
   return (
@@ -21,6 +23,13 @@ function LogementProfil({ id, hostName, hostPicture }) {
     </div>
   )
 }
+
+// Définition des propTypes pour valider les props passées au composant LogementProfil.
+LogementProfil.propTypes = {
+  id: PropTypes.string.isRequired,
+  hostName: PropTypes.string.isRequired,
+  hostPicture: PropTypes.string.isRequired,
+};
 
 // Exportation du composant LogementProfil pour pouvoir l'utiliser dans d'autres parties de l'application.
 export default LogementProfil

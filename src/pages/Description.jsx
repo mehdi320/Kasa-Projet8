@@ -69,7 +69,8 @@ const Description = () => {
             hostName={maison.host.name}
           />
           {/* Composant LogementRating pour afficher la note du logement */}
-          <LogementRating rating={maison.rating} />
+          <LogementRating rating={parseFloat(maison.rating)} />
+
         </div>
       </div>
 

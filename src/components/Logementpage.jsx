@@ -1,5 +1,3 @@
-// Importation de React pour utiliser la syntaxe JSX.
-import React from 'react';
 
 // Importation du composant CollapseLogement depuis le fichier associé.
 import CollapseLogement from './CollapseLogement'; // Assurez-vous que le chemin est correct.

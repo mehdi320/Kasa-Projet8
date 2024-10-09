@@ -8,6 +8,8 @@
 // Importation du fichier de style pour styliser le composant TitleLogement (commenté ici mais à activer selon l'organisation du projet).
 // import '../../style/components/TitleLogement/TitleLogement.scss'
 
+import PropTypes from 'prop-types';
+
 function TitleLogement({ title, subtitle }) {
   // Retourne une div contenant le titre et le sous-titre du logement.
   return (
@@ -20,6 +22,12 @@ function TitleLogement({ title, subtitle }) {
     </div>
   );
 }
+
+// Définition des types de props pour le composant TitleLogement.
+TitleLogement.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+};
 
 // Exportation du composant pour l'utiliser dans d'autres parties de l'application.
 export default TitleLogement;
