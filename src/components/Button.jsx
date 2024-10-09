@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
 const Button = ({ text, onClick, show }) => {
   return (
@@ -15,8 +15,7 @@ const Button = ({ text, onClick, show }) => {
         justifyContent: 'center',
         borderRadius: '5px',
         transition: 'background-color 0.3s ease',
-        flexDirection: 'row', 
-        justifyContent: 'space-between',
+        flexDirection: 'row',
       }}
       onClick={onClick}
     >
@@ -39,6 +38,12 @@ const Button = ({ text, onClick, show }) => {
   );
 
   
+};
+
+Button.propTypes = {
+  text: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+  show: PropTypes.bool.isRequired,
 };
 
 export default Button;

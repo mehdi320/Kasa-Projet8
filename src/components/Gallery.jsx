@@ -15,6 +15,8 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 // Importation du fichier SCSS pour les styles du carrousel (modifier le chemin si nécessaire selon l'organisation de ton projet).
 import '../sass/gallery.scss';
 
+import PropTypes from 'prop-types';
+
 // Définition du composant Carrousel, qui prend en entrée un tableau d'images.
 const Carrousel = ({ images }) => {
   
@@ -88,6 +90,11 @@ const Carrousel = ({ images }) => {
       )}
     </div>
   );
+};
+
+// Définition des propTypes pour le composant Carrousel.
+Carrousel.propTypes = {
+  images: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 // Exportation du composant pour qu'il puisse être utilisé dans d'autres parties de l'application.
