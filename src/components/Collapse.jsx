@@ -43,7 +43,10 @@ const Collapse = ({ name, content, customClass = '' }) => {
 // Validation des props pour s'assurer que le composant reçoit les bons types de données
 Collapse.propTypes = {
   name: PropTypes.string.isRequired, // Le nom (ou titre) est requis et doit être une chaîne de caractères
-  content: PropTypes.string.isRequired, // Le contenu est requis et doit être une chaîne de caractères
+  content: PropTypes.oneOfType([
+    PropTypes.string,  // Le contenu peut être une chaîne de caractères
+    PropTypes.node,    // Le contenu peut également être du JSX (éléments React)
+  ]).isRequired, // Le contenu est requis mais peut être soit du texte, soit du JSX
   customClass: PropTypes.string, // La classe personnalisée est optionnelle et doit être une chaîne de caractères
 };
 
