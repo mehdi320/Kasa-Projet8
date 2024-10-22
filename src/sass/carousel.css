@@ -39,13 +39,22 @@
   height: 500px; /* Hauteur fixe pour toutes les images */
   border-radius: 25px; /* Coins arrondis pour toutes les images */
   -o-object-fit: cover;
-     object-fit: cover; /* Conserver les proportions de l'image tout en remplissant l'espace */
+  object-fit: cover; /* Conserver les proportions de l'image tout en remplissant l'espace */
 }
 
 .carousel .slide img {
   max-width: 100%; /* Empêche l'image de dépasser sa largeur maximale */
   -o-object-fit: cover;
-     object-fit: cover; /* Cette ligne est redondante ici si elle est déjà définie dans .carousel img */
+  object-fit: cover; /* Cette ligne est redondante ici si elle est déjà définie dans .carousel img */
   vertical-align: top; /* Évite les espaces blancs sous l'image */
   border: 0; /* Supprime toute bordure indésirable */
+} 
+@media screen and (max-width: 480px) {
+  .carousel {
+    display: flex;
+    width: 335px;
+    height: 255px;
+    margin-bottom: 15px;
+    margin-left: 14%;
+  }
 }/*# sourceMappingURL=carousel.css.map */

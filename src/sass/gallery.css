@@ -74,10 +74,10 @@
   font-family: "Montserrat";
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .carousel {
     display: flex;
-    width: 90%;
+    width: 335px;
     height: 255px;
     margin-bottom: 15px;
   }
@@ -105,5 +105,16 @@
   }
   .carousel .carousel-counter {
     display: none;
+  }
+  .buttons-container {
+    display: grid;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 10px 0px 10px 10px;
   }
 }/*# sourceMappingURL=gallery.css.map */

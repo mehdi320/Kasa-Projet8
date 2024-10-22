@@ -76,10 +76,10 @@
 
 // Media Queries
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .carousel {
     display: flex;
-    width: 90%;
+    width: 335px;
     height: 255px;
     margin-bottom: 15px;
 
@@ -112,5 +112,17 @@
     .carousel-counter {
       display: none;
     }
+  }
+
+  .buttons-container {
+    display: grid;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 10px 0px 10px 10px;
   }
 }
