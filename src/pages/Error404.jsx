@@ -4,6 +4,7 @@
  */
 
 import { Link } from 'react-router-dom'
+import Footer from "../components/Footer.jsx";
 import '../sass/error404.scss';
 
 function Error404() {
@@ -24,6 +25,8 @@ function Error404() {
           className="error404-text"
         >{`Retourner sur la page d'accueil`}</Link>{' '}
       </div>
+      {/* Pied de page de la page d'accueil */}
+      <Footer />
     </div>
   )
 }
