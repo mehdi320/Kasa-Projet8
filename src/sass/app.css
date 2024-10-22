@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   display: flex;
   justify-content: space-between;
@@ -19,4 +20,15 @@
 .header nav ul li {
   margin: 0 20px;
   list-style: none;
+}
+
+@media screen and (max-width: 480px) {
+  .header nav ul a {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 12px;
+  }
+  .header nav ul li {
+    margin: 0; /* Réinitialise la marge pour les petits écrans */
+  }
 }/*# sourceMappingURL=app.css.map */

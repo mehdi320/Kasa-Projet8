@@ -44,7 +44,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .error404 {
     gap: 113px;
     display: flex;
@@ -62,6 +62,7 @@
     font-style: normal;
     font-family: "Montserrat";
     padding-top: 90px;
+    margin-top: 100px;
   }
   .error404 .error404-subtitle {
     width: 100%;
@@ -72,6 +73,7 @@
     font-weight: 500;
     font-style: normal;
     font-family: "Montserrat";
+    margin-top: 100px;
   }
   .error404 .error404-text-container {
     margin-bottom: 113px;
@@ -83,5 +85,6 @@
     font-weight: 500;
     font-style: normal;
     font-family: "Montserrat";
+    margin-top: 100px;
   }
 }/*# sourceMappingURL=error404.css.map */

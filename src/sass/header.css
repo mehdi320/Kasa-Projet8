@@ -11,12 +11,16 @@
   max-width: 1440px;
 }
 
-/* Media Queries */
-@media screen and (max-width: 768px) {
+/* Media Queries pour téléphones */
+@media screen and (max-width: 480px) {
   .header {
     display: flex;
-    width: 335px;
+    width: 10%;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 27px;
+    margin-right: 50px;
+    margin-left: 50px;
   }
   .header-logo {
     width: 145px; /* Garder la taille du logo à 145px */
