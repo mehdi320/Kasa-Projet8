@@ -16,8 +16,9 @@
 
 // Media Queries
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .logement-rating {
     font-size: 18px;
+    position: absolute;
   }
 }
