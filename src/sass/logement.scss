@@ -12,9 +12,28 @@
   padding-top: 24px;
 }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 480px) {
     .main-logement {
       width: 100%;
+    }
+    .first-container{
+      padding-top: 15px;
+      display: grid;
+      justify-content: normal;
+    }
+    .logement-profil-mobile{
+      display: grid;
+      justify-content: end;
+      position: relative;
+        top: -55px;
+    }
+
+    .logement-tags{
+      display: flex;
+      flex-wrap: initial;
+      gap: 10px;
+      margin-top: 10px;
+      height: 20%;
     }
   }
   
