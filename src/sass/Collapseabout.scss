@@ -70,13 +70,9 @@
 
 // Media Queries
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .collapse-container {
-    width: 90%;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
+    width: 75%;
     margin-bottom: 20px;
 
     .collapse-title {
