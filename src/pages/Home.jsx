@@ -13,12 +13,12 @@ const Home = () => {
     <div className="body">
       {/* Conteneur principal de la page d'accueil */}
       <div className="home">
-        
+
         {/* Bannière avec une image et un titre */}
         <div className="banner">
           {/* Affichage de l'image de la bannière (modifiez le chemin de l'image si nécessaire) */}
           <img src="./images/IMG.png" alt="banner" />
-          
+
           {/* Titre de la bannière */}
           <h1 className="h1">Chez vous, partout et ailleurs</h1>
         </div>
@@ -29,8 +29,7 @@ const Home = () => {
           <Accommodation Maisons={Maisons} />
         </div>
       </div>
-      
-      {/* Pied de page de la page d'accueil */}
+
       <Footer />
     </div>
   );

@@ -11,8 +11,9 @@
   color: #e3e3e3;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .logement-rating {
-    font-size: 18px;
+    font-size: medium;
+    position: absolute;
   }
 }/*# sourceMappingURL=LogementRating.css.map */

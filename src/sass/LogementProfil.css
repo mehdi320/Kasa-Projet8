@@ -26,9 +26,16 @@
   margin-right: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
+  .body {
+    margin: 0;
+  }
   .logement-profil-container {
     margin: 0;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 70%;
   }
   .logement-profil-container .host-name {
     font-size: 14px;

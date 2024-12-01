@@ -133,6 +133,9 @@
     width: 225px;
     height: 48px;
   }
+  .body {
+    margin: 0;
+  }
 }
 .cards-container .gallery {
   background: #f6f6f6;
@@ -284,6 +287,16 @@
   object-fit: cover; /* Cette ligne est redondante ici si elle est déjà définie dans .carousel img */
   vertical-align: top; /* Évite les espaces blancs sous l'image */
   border: 0; /* Supprime toute bordure indésirable */
+}
+
+@media screen and (max-width: 480px) {
+  .carousel {
+    display: flex;
+    width: 335px;
+    height: 255px;
+    margin-bottom: 15px;
+    margin-left: 14%;
+  }
 } 
 .collapse-container {
   width: 70%;
@@ -359,9 +372,9 @@
   padding: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .collapse-container {
-    width: 90%;
+    width: 75%;
     margin-bottom: 20px;
   }
   .collapse-container .collapse-title {
@@ -664,9 +677,10 @@
   color: #e3e3e3;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .logement-rating {
-    font-size: 18px;
+    font-size: medium;
+    position: absolute;
   }
 }
 .logement-profil-container {
@@ -696,9 +710,16 @@
   margin-right: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
+  .body {
+    margin: 0;
+  }
   .logement-profil-container {
     margin: 0;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 70%;
   }
   .logement-profil-container .host-name {
     font-size: 14px;
@@ -724,9 +745,26 @@
   padding-top: 24px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .main-logement {
     width: 100%;
+  }
+  .first-container {
+    padding-top: 15px;
+    display: grid;
+    justify-content: normal;
+    padding-left: 15px;
+  }
+  .logement-profil-mobile {
+    display: grid;
+    justify-content: end;
+  }
+  .logement-tags {
+    display: flex;
+    flex-wrap: initial;
+    gap: 10px;
+    margin-top: 10px;
+    height: 20%;
   }
 }
 .carousel {
@@ -804,10 +842,10 @@
   font-family: "Montserrat";
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .carousel {
     display: flex;
-    width: 90%;
+    width: 335px;
     height: 255px;
     margin-bottom: 15px;
   }
@@ -835,5 +873,18 @@
   }
   .carousel .carousel-counter {
     display: none;
+  }
+  .buttons-container {
+    display: grid;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25%;
+    gap: 10px;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 10px 0px 10px 10px;
+    height: 30px;
+    margin-bottom: 7%;
   }
 }/*# sourceMappingURL=main.css.map */

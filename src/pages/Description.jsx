@@ -34,6 +34,8 @@ import "../sass/TitleLogement.scss";
 import "../sass/LogementTags.scss";
 import "../sass/LogementProfil.scss";
 import "../sass/LogementRating.scss";
+import "../sass/Description.css";
+
 
 const Description = () => {
   // Récupération de l'id du logement depuis l'URL.
@@ -56,7 +58,7 @@ const Description = () => {
         <div>
           {/* Composant TitleLogement pour afficher le titre et la localisation du logement */}
           <TitleLogement title={maison.title} subtitle={maison.location} />
-          
+
           {/* Composant LogementTag pour afficher les tags du logement */}
           <LogementTag tags={maison.tags} />
         </div>
@@ -77,7 +79,7 @@ const Description = () => {
       <div className="buttons-container">
         {/* Composant Collapse pour afficher la description sous forme repliable */}
         <Collapse name="Description" content={maison.description} />
-        
+
         {/* Composant Collapse pour afficher la liste des équipements du logement sous forme repliable */}
         <Collapse
           name="Équipements"
@@ -97,7 +99,7 @@ const Description = () => {
       </footer>
     </div>
 
-    
+
   );
 };
 

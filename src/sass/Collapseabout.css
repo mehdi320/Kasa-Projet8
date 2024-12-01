@@ -73,9 +73,9 @@
   padding: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .collapse-container {
-    width: 90%;
+    width: 75%;
     margin-bottom: 20px;
   }
   .collapse-container .collapse-title {
