@@ -43,9 +43,9 @@ const Apropos = () => {
       </main>
 
       {/* Pied de page */}
-      <footer>
-        <Footer />
-      </footer>
+
+      <Footer />
+
     </div>
   );
 };
