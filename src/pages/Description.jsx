@@ -29,12 +29,12 @@ import LogementProfil from '../components/LogementProfil';
 import LogementRating from '../components/LogementRating';
 
 // Importation des fichiers SCSS pour les styles des composants.
-import "../sass/gallery.scss";
-import "../sass/TitleLogement.scss";
-import "../sass/LogementTags.scss";
-import "../sass/LogementProfil.scss";
-import "../sass/LogementRating.scss";
-import "../sass/Description.css";
+import "../sass/gallery/gallery.scss";
+import "../sass/TitleLogement/TitleLogement.scss";
+import "../sass/LogementTags/LogementTags.scss";
+import "../sass/LogementProfil/LogementProfil.scss";
+import "../sass/LogementRating/LogementRating.scss";
+import "../sass/Description/Description.css";
 
 
 const Description = () => {

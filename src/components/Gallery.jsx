@@ -13,13 +13,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 // Importation du fichier SCSS pour les styles du carrousel (modifier le chemin si nécessaire selon l'organisation de ton projet).
-import '../sass/gallery.scss';
+import '../sass/gallery/gallery.scss';
 
 import PropTypes from 'prop-types';
 
 // Définition du composant Carrousel, qui prend en entrée un tableau d'images.
 const Carrousel = ({ images }) => {
-  
+
   // Création de l'état currentSlide qui stocke l'index de la diapositive courante, initialisé à 0.
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -39,7 +39,7 @@ const Carrousel = ({ images }) => {
 
   return (
     <div className="carousel">
-      
+
       {/* Affichage du bouton "Précédent" uniquement si le carrousel contient plus d'une image. */}
       {images.length > 1 && (
         <button className="previousButton" onClick={previousSlide}>

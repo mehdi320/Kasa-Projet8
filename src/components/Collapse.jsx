@@ -3,7 +3,7 @@ import { useState } from 'react'; // Hook pour gérer l'état du composant
 import PropTypes from 'prop-types'; // Pour la validation des types des props
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Pour utiliser les icônes
 import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons'; // Importation des icônes pour les boutons ouvrir/fermer
-import '../sass/Collapselogement.scss'; // Importation du fichier de styles spécifiques à ce composant
+import '../sass/Collapselogement/Collapselogement.scss'; // Importation du fichier de styles spécifiques à ce composant
 
 // Définition du composant Collapse
 const Collapse = ({ name, content, customClass = '' }) => {

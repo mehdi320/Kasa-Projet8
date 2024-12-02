@@ -1,11 +1,11 @@
-@import '../style/Variables_Mixins/Variables_Mixins.scss';
+@import '../../style/Variables_Mixins/Variables_Mixins.scss';
 .footer-container {
   background-color: $black-color;
   width: 100%;
   display: flex;
   @include flexbox(column, center, center);
   padding: 66px 0 29px 0;
-  position: absolute;
+ 
 
 
   .footer-logo {

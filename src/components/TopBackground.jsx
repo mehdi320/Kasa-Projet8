@@ -7,7 +7,7 @@
  */
 
 // Importation du fichier de styles SCSS spécifique au composant TopBackground.
-import '../sass/TopBackground.scss';
+import '../sass/TopBackground/TopBackground.scss';
 
 function TopBackground({ picture, alt, title }) {
   // Retourne une div contenant l'image de fond et un titre superposé.
@@ -15,7 +15,7 @@ function TopBackground({ picture, alt, title }) {
     <div className="background-container">
       {/* Affichage de l'image avec la classe CSS `background-img`, avec l'URL de l'image et un texte alternatif pour l'accessibilité */}
       <img className="background-img" src={picture} alt={alt} />
-      
+
       {/* Affichage du titre superposé sur l'image avec la classe CSS `background-title` */}
       <h1 className="background-title">{title}</h1>
     </div>
