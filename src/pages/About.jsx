@@ -5,7 +5,7 @@ import ImageBackground from '/src/assets/images/Montagnes.svg';
 
 const Apropos = () => {
   return (
-    <div>
+    <div className="body">
       {/* En-tête de la page */}
       <header className="defaultstyle">
         {/* Si tu n'as pas de contenu ici, enlève ce header ou ajoute le vrai contenu */}
