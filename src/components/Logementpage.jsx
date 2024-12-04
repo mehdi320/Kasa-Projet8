@@ -12,7 +12,7 @@ const LogementPage = () => {
     <div className="logement-page">
 
       {/* Conteneur pour centrer les boutons de collapse à l'horizontale */}
-      <div className="button-container">
+      <div className="container-collapse-logements">
 
         {/* Composant CollapseLogement avec le titre 'Description' et le contenu 'descriptionContent' */}
         <CollapseLogement name="Description" content={descriptionContent} />

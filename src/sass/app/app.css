@@ -31,4 +31,9 @@
   .header nav ul li {
     margin: 0; /* Réinitialise la marge pour les petits écrans */
   }
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
 }/*# sourceMappingURL=app.css.map */

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-.buttons-container {
+.container-collapse-logements {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -8,7 +8,7 @@
 }
 
 .collapse-logement-container {
-  width: 100%;
+  width: 70%;
   margin-bottom: 20px;
   border-radius: 5px;
 }
@@ -36,10 +36,10 @@
   background: none;
   border: none;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: all 0.4s ease;
 }
 .collapse-logement-container .collapse-logement-title button:hover {
-  transform: scale(1.1);
+  scale: 1.2;
 }
 .collapse-logement-container .collapse-logement-title button.close {
   transform: rotate(0deg);
@@ -52,11 +52,12 @@
   background-color: #f6f6f6;
   border-radius: 0 0 10px 10px;
   overflow: hidden;
-  transition: max-height 0.4s ease;
   max-height: 0;
+  transition: max-height 0.4s ease, padding 0.4s ease;
 }
 .collapse-logement-container .collapse-logement-content.open {
-  max-height: 400px;
+  max-height: auto;
+  padding-bottom: 20px;
 }
 .collapse-logement-container .collapse-logement-content .collapse-logement-content-text {
   padding: 15px;
@@ -65,25 +66,41 @@
   line-height: 1.5;
 }
 
-@media screen and (max-width: 768px) {
-  .collapse-logement-container {
-    margin-bottom: 15px;
+@media screen and (max-width: 480px) {
+  .container-collapse-logements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25%;
+    align-items: center;
+    justify-items: center;
   }
-  .collapse-logement-container .collapse-logement-title {
-    padding: 10px 15px;
+  .container-collapse-logements .collapse-logement-title {
+    width: 100%;
   }
-  .collapse-logement-container .collapse-logement-title p {
-    font-size: 14px;
+  .container-collapse-logements .collapse-logement-title p {
+    font-size: 13px;
     color: white;
+    line-height: 142.6%;
+    font-weight: 500;
+    font-style: normal;
+    font-family: "Montserrat";
   }
-  .collapse-logement-container .collapse-logement-title button {
-    width: 28px;
-    height: 28px;
+  .container-collapse-logements .collapse-logement-title button {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
   }
-  .collapse-logement-container .collapse-logement-content {
-    padding: 10px;
+  .container-collapse-logements .collapse-logement-content {
+    width: 100%;
+    font-size: 13px;
+    color: #ff6060;
+    line-height: 142.6%;
+    font-weight: none;
+    font-style: normal;
+    font-family: "Montserrat";
   }
-  .collapse-logement-container .collapse-logement-content .collapse-logement-content-text {
+  .container-collapse-logements .collapse-logement-content .collapse-logement-content-text {
     font-size: 14px;
     color: #666;
   }

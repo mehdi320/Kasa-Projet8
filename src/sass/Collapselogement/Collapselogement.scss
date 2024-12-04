@@ -1,11 +1,11 @@
 @import '../../style/Variables_Mixins/Variables_Mixins.scss';
 
-.button-container {
+.container-collapse-logements {
   display: flex;
   flex-direction: row; // Alignement horizontal
-  justify-content: center; // Centre les boutons horizontalement
-  gap: 100px; // Espace entre les boutons
-  margin-top: 20px; // Ajoute une marge au-dessus des boutons
+  justify-content: center; 
+  gap: 100px; 
+  margin-top: 20px;
 }
 
 
@@ -79,10 +79,14 @@
 }
 
 // Design responsive pour les mobiles
-@media screen and (max-width: 768px) {
-  .collapse-logement-container {
-    width: 75%;
-    margin-bottom: 20px;
+@media screen and (max-width: 480px) {
+  .container-collapse-logements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25%;
+    align-items: center;
+    justify-items: center;
 
     .collapse-logement-title {
       width: 100%;
