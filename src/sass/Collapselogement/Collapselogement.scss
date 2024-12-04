@@ -1,6 +1,6 @@
 @import '../../style/Variables_Mixins/Variables_Mixins.scss';
 
-.buttons-container {
+.button-container {
   display: flex;
   flex-direction: row; // Alignement horizontal
   justify-content: center; // Centre les boutons horizontalement
@@ -10,7 +10,7 @@
 
 
 .collapse-logement-container {
-  width: 100%;
+  width: 70%;
   margin-bottom: 20px;
   border-radius: 5px;
 
@@ -39,10 +39,10 @@
       background: none;
       border: none;
       cursor: pointer;
-      transition: transform 0.3s ease;
+      transition: all 0.4s ease;
 
       &:hover {
-        transform: scale(1.1);
+        scale: 1.2;
       }
 
       &.close {
@@ -60,12 +60,14 @@
     background-color: $secondary-color; // Arrière-plan gris
     border-radius: 0 0 10px 10px; // Coins arrondis en bas
     overflow: hidden;
-    transition: max-height 0.4s ease;
-    max-height: 0;
-
+    max-height: 0; // Par défaut fermé
+    transition: max-height 0.4s ease, padding 0.4s ease;
+  
     &.open {
-      max-height: 400px;
+      max-height: auto; // Valeur fixe à ajuster selon vos besoins
+      padding-bottom: 20px;
     }
+  
 
     .collapse-logement-content-text {
       padding: 15px;
@@ -79,24 +81,26 @@
 // Design responsive pour les mobiles
 @media screen and (max-width: 768px) {
   .collapse-logement-container {
-    margin-bottom: 15px;
+    width: 75%;
+    margin-bottom: 20px;
 
     .collapse-logement-title {
-      padding: 10px 15px;
+      width: 100%;
 
       p {
-        font-size: 14px;
-        color: white; // Texte blanc
+        @include font-montserrat-500(13px, white, 142.6%);
       }
 
       button {
-        width: 28px;
-        height: 28px;
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;;
       }
     }
 
     .collapse-logement-content {
-      padding: 10px;
+      width: 100%;
+      @include font-montserrat(13px, $primary-color, 142.6%, none);
 
       .collapse-logement-content-text {
         font-size: 14px;

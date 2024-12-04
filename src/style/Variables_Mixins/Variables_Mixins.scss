@@ -49,3 +49,11 @@ $black-color: black;
   justify-content: $justify-content;
   align-items: $align-items;
 }
+
+
+// Global styles
+@mixin global-styles {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

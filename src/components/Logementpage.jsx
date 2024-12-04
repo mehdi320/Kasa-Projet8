@@ -10,13 +10,13 @@ const LogementPage = () => {
   return (
     // Élément racine de la page logement avec une classe CSS pour styliser la page.
     <div className="logement-page">
-      
+
       {/* Conteneur pour centrer les boutons de collapse à l'horizontale */}
-      <div className="buttons-container">
-        
+      <div className="button-container">
+
         {/* Composant CollapseLogement avec le titre 'Description' et le contenu 'descriptionContent' */}
         <CollapseLogement name="Description" content={descriptionContent} />
-        
+
         {/* Composant CollapseLogement avec le titre 'Équipements' et le contenu 'equipementsContent' */}
         <CollapseLogement name="Équipements" content={equipementsContent} />
       </div>
