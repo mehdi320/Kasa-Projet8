@@ -76,7 +76,7 @@ const Description = () => {
         </div>
       </div>
 
-      <div className="buttons-container">
+      <div className="container-collapse-logements">
         {/* Composant Collapse pour afficher la description sous forme repliable */}
         <Collapse name="Description" content={maison.description} />
 

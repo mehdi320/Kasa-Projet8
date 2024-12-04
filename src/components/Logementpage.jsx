@@ -1,6 +1,7 @@
 
 // Importation du composant CollapseLogement depuis le fichier associé.
 import CollapseLogement from './CollapseLogement'; // Assurez-vous que le chemin est correct.
+import "../sass/Collapselogement/Collapselogement.scss"; // Importation du fichier de styles SCSS spécifique au composant LogementPage.
 
 const LogementPage = () => {
   // Contenu statique pour la description et les équipements.
