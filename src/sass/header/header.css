@@ -3,7 +3,6 @@
   width: 100%;
   margin-top: 45px;
   margin-bottom: 50px;
-  margin-right: 100px;
   margin-left: 100px;
   display: flex;
   justify-content: space-between;
@@ -19,7 +18,6 @@
     align-items: center;
     margin-top: 20px;
     margin-bottom: 27px;
-    margin-right: 50px;
     margin-left: 50px;
   }
   .header-logo {
@@ -28,7 +26,6 @@
   .header-nav ul {
     width: 100%;
     justify-content: space-between;
-    gap: 26px; /* Ajustement du gap pour la navigation */
   }
   .header-nav a {
     font-size: 12px; /* Ajuster la taille de la police */
