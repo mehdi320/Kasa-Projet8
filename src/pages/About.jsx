@@ -3,6 +3,7 @@ import Footer from '../components/Footer';
 import TopBackground from '../components/TopBackground';
 import ImageBackground from '/src/assets/images/Montagnes.svg';
 
+
 const Apropos = () => {
   return (
     <div className="body">

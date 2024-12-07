@@ -5,6 +5,7 @@
     width: 90%;
     max-width: 1440px;
     height: auto;
+    overflow-x: hidden;
     margin: 0 auto;   
   }
   
@@ -23,6 +24,7 @@
       display: grid;
       justify-content: normal;
       padding-left: 15px;
+      box-sizing: border-box; 
     }
     .logement-profil-mobile{
       display: grid;
@@ -30,11 +32,14 @@
     }
 
     .logement-tags{
-      display: flex;
-      flex-wrap: initial;
-      gap: 10px;
-      margin-top: 10px;
-      height: 20%;
+      display: grid;
+          grid-auto-flow: column;
+          justify-content: start;
+          gap: 10px;
+          margin-top: 10px;
+          align-items: center;
+          width: auto;
+          height: auto;
     }
   }
   
