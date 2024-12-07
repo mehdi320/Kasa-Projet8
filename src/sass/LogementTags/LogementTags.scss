@@ -1,41 +1,28 @@
-@import '../../style/Variables_Mixins/Variables_Mixins.scss';
-
-.logement-tags {
+/* Styles pour le conteneur principal */
+.logement-tags-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  flex-wrap: nowrap; 
+  gap: 10px; /* Espacement entre les éléments */
   margin-top: 20px;
   margin-bottom: 24px;
-
-  .logement-tag {
-    width: auto;
-    border-radius: 10px;
-    flex-shrink: 0;
-    padding: 3px 30px;
-    background: #ff6060;
-    font-size: 14px;
-    color: white;
-    line-height: 142.6%;
-    font-weight: 500;
-    font-style: normal;
-    font-family: "Montserrat";
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
+  padding: 10px 0; /* Ajuste l'espacement autour */
+  border-radius: 10px;
 }
 
-// Media Queries
+/* Styles pour chaque tag individuel */
+.logement-tags {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 142.6%;
+  color: white;
+  padding: 5px 10px; /* Espacement interne */
+  background-color: #ff6060; /* Fond rouge appliqué aux tags */
+  border-radius: 5px; /* Coins arrondis pour les tags */
+  text-align: center; /* Centre le texte dans chaque tag */
 
-@media screen and (max-width: 768px) {
-  .logements-tags-container {
-    margin-top: 10px;
-    margin-bottom: 17px;
-
-    .logements-tag {
-      @include font-montserrat-500(10px, white, 142.6%);
-      padding: 3px 20px;
-    }
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+    white-space: nowrap;
   }
 }

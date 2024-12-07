@@ -29,18 +29,16 @@
     .logement-profil-mobile{
       display: grid;
       justify-content: end;
-    }
+}
 
-    .logement-tags{
-      display: grid;
-          grid-auto-flow: column;
-          justify-content: start;
-          gap: 10px;
-          margin-top: 10px;
-          align-items: center;
-          width: auto;
-          height: auto;
-    }
+ .main-logement{
+  justify-content: start;
+  gap: 10px;
+  margin-top: 10px;
+  align-items: center;
+  width: auto;
+  height: auto;
   }
+}
   
   

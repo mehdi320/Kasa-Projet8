@@ -38,7 +38,6 @@ import "../sass/Description/Description.css";
 import "../sass/body/body.scss";
 
 
-
 const Description = () => {
   // Récupération de l'id du logement depuis l'URL.
   const { id } = useParams();

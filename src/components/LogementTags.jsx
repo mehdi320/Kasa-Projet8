@@ -20,11 +20,10 @@ function LogementTag() {
 
   return (
     // Conteneur pour afficher les tags du logement sous forme de spans.
-    <div className="logement-tags">
-
+    <div className="logement-tags-container">
       {/* Parcours du tableau des tags de la maison et affichage de chaque tag dans un élément <span>. */}
       {maison.tags.map((tag, index) => (
-        <span key={index} className="logement-tag">
+        <span key={index} className="logement-tags">
           {/* Affichage du contenu du tag */}
           {tag}
         </span>
