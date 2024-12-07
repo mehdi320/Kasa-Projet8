@@ -6,6 +6,8 @@
 import { Link } from 'react-router-dom'
 import Footer from "../components/Footer.jsx";
 import '../sass/error404/error404.scss';
+import "../sass/body/body.scss";
+
 
 function Error404() {
   return (

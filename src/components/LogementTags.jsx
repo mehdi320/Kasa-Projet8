@@ -1,5 +1,7 @@
 // Importation du fichier JSON contenant les informations sur les maisons (assurez-vous que le chemin est correct).
 import Maisons from "@data/maison.json";
+import "../sass/body/body.scss";
+
 
 // Importation de la fonction useParams de react-router-dom pour accéder aux paramètres de l'URL.
 import { useParams } from "react-router-dom";
@@ -19,7 +21,7 @@ function LogementTag() {
   return (
     // Conteneur pour afficher les tags du logement sous forme de spans.
     <div className="logement-tags">
-      
+
       {/* Parcours du tableau des tags de la maison et affichage de chaque tag dans un élément <span>. */}
       {maison.tags.map((tag, index) => (
         <span key={index} className="logement-tag">

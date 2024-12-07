@@ -6,6 +6,7 @@ import Maisons from "../data/maison.json";
 
 // Importation du composant Footer depuis son fichier pour afficher le pied de page.
 import Footer from "../components/Footer.jsx";
+import "../sass/body/body.scss";
 
 const Home = () => {
   return (

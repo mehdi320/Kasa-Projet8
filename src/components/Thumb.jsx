@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 // Importation du composant Link de react-router-dom pour la navigation entre les pages.
 import { Link } from 'react-router-dom';
+import "../sass/body/body.scss";
 
 // Définition du composant Accommodation qui reçoit la prop `Maisons` (un tableau d'objets représentant les logements).
 const Accommodation = ({ Maisons }) => {

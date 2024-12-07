@@ -8,6 +8,8 @@
 
 // Importation du fichier de style pour styliser le composant LogementProfil (commenté pour le moment).
 // import '../../style/components/LogementProfil/LogementProfil.scss'
+import "../sass/body/body.scss";
+
 
 import PropTypes from 'prop-types';
 

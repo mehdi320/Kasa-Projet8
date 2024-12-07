@@ -49,10 +49,7 @@
   }
 }
 .header {
-  width: 100%;
-  margin-top: 45px;
-  margin-bottom: 50px;
-  margin-left: 100px;
+  margin: 45px auto 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,12 +59,9 @@
 /* Media Queries pour téléphones */
 @media screen and (max-width: 480px) {
   .header {
-    display: flex;
-    width: 10%;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 27px;
-    margin-left: 50px;
+    width: auto;
+    margin: 20px auto 27px;
+    padding: 0 55px;
   }
   .header-logo {
     width: 145px; /* Garder la taille du logo à 145px */
@@ -132,8 +126,8 @@
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
-    width: 225px;
-    height: 48px;
+    width: auto;
+    height: auto;
   }
   .body {
     margin: 0;
@@ -761,6 +755,7 @@
   width: 90%;
   max-width: 1440px;
   height: auto;
+  overflow-x: hidden;
   margin: 0 auto;
 }
 
@@ -779,17 +774,21 @@
     display: grid;
     justify-content: normal;
     padding-left: 15px;
+    box-sizing: border-box;
   }
   .logement-profil-mobile {
     display: grid;
     justify-content: end;
   }
   .logement-tags {
-    display: flex;
-    flex-wrap: initial;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
     gap: 10px;
     margin-top: 10px;
-    height: 20%;
+    align-items: center;
+    width: auto;
+    height: auto;
   }
 }
 .carousel {
@@ -912,4 +911,23 @@
     height: 30px;
     margin-bottom: 7%;
   }
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* Empêche le scroll horizontal */
+}
+
+* {
+  box-sizing: border-box;
+  /* Gère les calculs de largeur correctement */
+}
+
+body {
+  scrollbar-width: thin;
+  /* Firefox */
+  overflow: overlay;
+  /* Chrome, Edge */
 }/*# sourceMappingURL=main.css.map */

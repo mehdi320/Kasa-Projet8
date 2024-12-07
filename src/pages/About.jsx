@@ -2,6 +2,8 @@ import Collapse from '../components/Collapse';
 import Footer from '../components/Footer';
 import TopBackground from '../components/TopBackground';
 import ImageBackground from '/src/assets/images/Montagnes.svg';
+import "../sass/body/body.css";
+
 
 
 const Apropos = () => {

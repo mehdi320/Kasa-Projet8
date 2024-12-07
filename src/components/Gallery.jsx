@@ -14,6 +14,8 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 
 // Importation du fichier SCSS pour les styles du carrousel (modifier le chemin si nécessaire selon l'organisation de ton projet).
 import '../sass/gallery/gallery.scss';
+import "../sass/body/body.scss";
+
 
 import PropTypes from 'prop-types';
 

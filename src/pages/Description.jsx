@@ -35,6 +35,8 @@ import "../sass/LogementTags/LogementTags.scss";
 import "../sass/LogementProfil/LogementProfil.scss";
 import "../sass/LogementRating/LogementRating.scss";
 import "../sass/Description/Description.css";
+import "../sass/body/body.scss";
+
 
 
 const Description = () => {

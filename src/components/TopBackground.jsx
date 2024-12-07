@@ -8,6 +8,8 @@
 
 // Importation du fichier de styles SCSS spécifique au composant TopBackground.
 import '../sass/TopBackground/TopBackground.scss';
+import "../sass/body/body.scss";
+
 
 function TopBackground({ picture, alt, title }) {
   // Retourne une div contenant l'image de fond et un titre superposé.

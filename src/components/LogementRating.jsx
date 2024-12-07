@@ -8,6 +8,8 @@ import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import PropTypes from 'prop-types'
 // import '../../style/components/LogementRating/LogementRating.scss';
+import "../sass/body/body.scss";
+
 
 function LogementRating({ rating }) {
   // Calcul du nombre d'étoiles pleines

@@ -2,6 +2,8 @@
 import LogoKasa from '../assets/images/LOGO.png';
 // Importation du composant NavLink depuis 'react-router-dom' pour gérer la navigation
 import { NavLink } from 'react-router-dom';
+import "../sass/body/body.scss";
+
 
 // Définition du composant Header
 const Header = () => {
@@ -13,7 +15,7 @@ const Header = () => {
                 {/* Affichage de l'image du logo, avec l'attribut alt et la classe CSS 'header-logo' */}
                 <img src={LogoKasa} alt="LogoKasa" className="header-logo" />
             </NavLink>
-            
+
             {/* Définition de la barre de navigation */}
             <nav className="header-nav">
                 <ul>

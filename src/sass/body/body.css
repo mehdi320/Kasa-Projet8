@@ -1,0 +1,20 @@
+@charset "UTF-8";
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* Empêche le scroll horizontal */
+}
+
+* {
+  box-sizing: border-box;
+  /* Gère les calculs de largeur correctement */
+}
+
+body {
+  scrollbar-width: thin;
+  /* Firefox */
+  overflow: overlay;
+  /* Chrome, Edge */
+}/*# sourceMappingURL=body.css.map */
